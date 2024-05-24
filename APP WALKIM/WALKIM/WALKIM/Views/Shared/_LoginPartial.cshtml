@@ -1,0 +1,70 @@
+﻿@using System.Security.Claims;
+@using Microsoft.AspNetCore.Identity;
+@{
+    string img = "sinFoto.jpg";
+    string rol = null;
+    string name = null;
+    int estado = 0;
+
+    if (User.Identity.IsAuthenticated)
+    {
+        img = User.Claims.FirstOrDefault(c => c.Type == "ImagenPerfil")?.Value ?? "sinFoto.jpg";
+        rol = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Role)?.Value;
+        name = User.Claims.FirstOrDefault(c => c.Type == "Nombre")?.Value;
+        int.TryParse(User.Claims.FirstOrDefault(c => c.Type == "IdEstado")?.Value, out estado);
+    }
+}
+<style>
+    .user-info img {
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+    }
+
+    .user-info {
+        display: flex;
+        align-items: center;
+    }
+</style>
+<ul class="navbar-nav">
+    @if (User.Identity!.IsAuthenticated)
+    {
+        <a class="btn btn-warning" style="margin-right:10px;" asp-area="" asp-controller="Ticket" asp-action="CrearTicket">Abrir ticket</a>
+
+        if (rol == "usuario")
+        {
+            <li class="nav-item user-info">
+                <img src="~/IMG/@img" width="60px" style="border-radius:50%;" />
+                <a class="nav-link text-dark" asp-area="" asp-controller="Usuario" asp-action="MisDatos">@name</a>
+            </li>
+        }
+        else
+        {
+            if (estado == 6 || estado == 5)
+            {
+                <a class="nav-item btn btn-success" style="margin-right:10px;" asp-controller="Archivo" asp-action="SubirArchivo">Subir archivos</a>
+            }
+            else
+            {
+                <a class="nav-item btn btn-success" style="margin-right:10px;" asp-controller="Servicio" asp-action="CrearServicio">+</a>
+            }
+
+            <li class="nav-item user-info">
+                <img src="~/IMG/@img" width="60px" style="border-radius:50%;" />
+                <a class="nav-link text-dark" asp-area="" asp-controller="Servidor" asp-action="MisDatos">@name</a>
+            </li>
+        }
+        <li class="nav-item">
+            <a class="nav-link text-dark" asp-area="" asp-controller="Login" asp-action="Salir">Cerrar Sesión</a>
+        </li>
+    }
+    else
+    {
+        <li class="nav-item">
+            <a class="nav-link text-dark" asp-area="" asp-controller="Login" asp-action="IniciarSesion">Iniciar Sesión</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-dark" asp-area="" asp-controller="Login" asp-action="ElegirRol">Registrarse</a>
+        </li>
+    }
+</ul>

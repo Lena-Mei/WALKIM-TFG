@@ -1,0 +1,75 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model WALKIM.Models.Usuario
+
+<div class="row justify-content-center">
+    <div class="col-6">
+        <div class="row">
+            <div class="col-12">
+                <h1>Crear una nueva cuenta</h1>
+                <hr />
+            </div>
+            <form asp-action="RegistrarUsuario">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="col-12">
+                    <div class="form-group">
+                        <label asp-for="nombre" class="control-label fw-bold">Nombre:</label>
+                        <input asp-for="nombre" class="form-control" />
+                        <span asp-validation-for="nombre" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-group">
+                        <label asp-for="apellido1" class="control-label fw-bold">Apellidos:</label>
+                        <div class="row">
+                            <div class="col-6">
+                                <input asp-for="apellido1" class="form-control" />
+                                <span asp-validation-for="apellido1" class="text-danger"></span>
+                            </div>
+                            <div class="col-6">
+                                <input asp-for="apellido2" class="form-control" />
+                                <span asp-validation-for="apellido2" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-group">
+                        <label asp-for="telefono" class="control-label fw-bold">Teléfono:</label>
+                        <input asp-for="telefono" class="form-control"  maxlength="9"/>
+                        <span asp-validation-for="telefono" class="text-danger"></span>
+                    </div>
+                </div>
+             
+                <div class="col-12">
+                    <div class="form-group">
+                        <label asp-for="correo" class="control-label fw-bold">Correo electrónico:</label>
+                        <input asp-for="correo" class="form-control" />
+                        <span asp-validation-for="correo" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-group">
+                        <label asp-for="contrasenya" class="control-label fw-bold">Contraseña:</label>
+                        <input asp-for="contrasenya" class="form-control" />
+                        <span asp-validation-for="contrasenya" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-12" style="margin-top:10px;">
+                    <div class="form-group">
+                        <input type="submit" value="Registrarse" class="btn btn-primary" />
+                    </div>
+                </div>
+            </form>
+            @if (ViewData["errorMensaje"] != null)
+            {
+                <p class="alert alert-danger" style="margin-top:10px;">@ViewData["errorMensaje"]</p>
+            }
+        </div>
+        <p>¿Ya tienes una cuenta? <a class="link-primary" href="@Url.Action("IniciarSesion", "Login")">Iniciar sesión</a></p>
+    </div>
+</div>
+

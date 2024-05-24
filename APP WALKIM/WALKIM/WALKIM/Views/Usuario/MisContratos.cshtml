@@ -1,0 +1,88 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    var tipos = ViewBag.Tipos as List<WALKIM.Models.TipoServicio>;
+    var servicios = ViewBag.Servicios as List<WALKIM.Models.Servicio>;
+    var servidores = ViewBag.Servidores as List<WALKIM.Models.Servidor>;
+    var estados = ViewBag.Estados as List<WALKIM.Models.Estado>;
+
+}
+
+@model List<WALKIM.Models.Contrata>
+
+@if (Model.Count == 0)
+{
+    <p class="alert alert-danger">No has realizado ningún contrato con algún servicio.</p>
+}
+else
+{
+    <div class="row">
+        <div class="col-12">
+            <h2>Servicios Contratados</h2>
+            <hr />
+        </div>
+        <div class="col-12">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Servidor</th>
+                        <th>Nombre Servicio</th>
+                        <th>Servicio</th>
+                        <th>Fecha</th>
+                        <th>Duración</th>
+                        <th>Estado</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var contrato in Model)
+                    {
+                        <tr>
+                            @foreach (var servicio in servicios)
+                            {
+                                if (servicio.idServicio == contrato.idServicio)
+                                {
+                                    @foreach (var servidor in servidores)
+                                    {
+                                        if (servidor.idServidor == servicio.idServidor)
+                                        {
+                                            <td>
+                                                <a href="@Url.Action("Detalle", "Servidor", new{id=servidor.idServidor})">@servidor.correo</a>
+                                            </td>
+                                        }
+                                    }
+                                    <td>
+                                        @servicio.nombre
+                                    </td>
+                                    @foreach (var tipo in tipos)
+                                    {
+                                        if (servicio.idTipoServicio == tipo.idTipoServicio)
+                                        {
+                                            <td>
+                                                @tipo.nombre
+                                            </td>
+                                        }
+                                    }
+                                }
+                                <td>@contrato.fecha</td>
+                                <td>@contrato.tiempo</td>
+                                <td>
+                                    @foreach(var estado in estados)
+                                    {
+                                        if(contrato.idEstado == estado.idEstado)
+                                        {
+                                            @estado.nombre;
+                                        }
+                                    }
+                                </td>
+                            }
+
+                            <td><a href="@Url.Action("DetalleContrato", "Contrato", new {idContrato= contrato.idContrato})" class="btn btn-warning">Ver Detalles</a></td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+}

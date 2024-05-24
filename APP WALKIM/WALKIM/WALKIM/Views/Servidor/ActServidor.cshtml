@@ -1,0 +1,130 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model WALKIM.Models.Servidor
+
+<div class="row">
+    <div class="col-12">
+        <h1>Actualizar Datos</h1>
+        <hr />
+    </div>
+    <form asp-action="ActServidor">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="col-12">
+            <div class="row">
+                <div class="col-6">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label asp-for="nombre" class="control-label fw-bold">Nombre:</label>
+                                <input asp-for="nombre" class="form-control" />
+                                <span asp-validation-for="nombre" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label asp-for="provincia" class="control-label fw-bold">Provincia:</label>
+                                <input asp-for="provincia" class="form-control" />
+                                <span asp-validation-for="provincia" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label asp-for="apellido1" class="control-label fw-bold">Apellidos:</label>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <input asp-for="apellido1" class="form-control" />
+                                                <span asp-validation-for="apellido1" class="text-danger"></span>
+                                            </div>
+                                            <div class="col-6">
+                                                <input asp-for="apellido2" class="form-control" />
+                                                <span asp-validation-for="apellido2" class="text-danger"></span>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-7">
+                            <div class="form-group">
+                                <label asp-for="ciudad" class="control-label fw-bold">Ciudad:</label>
+                                <input asp-for="ciudad" class="form-control" />
+                                <span asp-validation-for="ciudad" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-5">
+                            <div class="form-group">
+                                <label asp-for="codigoPostal" class="control-label fw-bold">CP:</label>
+                                <input asp-for="codigoPostal" class="form-control" maxlength="5" />
+                                <span asp-validation-for="codigoPostal" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label asp-for="direccion" class="control-label fw-bold">Dirección:</label>
+                                <input asp-for="direccion" class="form-control" />
+                                <span asp-validation-for="direccion" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label asp-for="telefono" class="control-label fw-bold">Teléfono:</label>
+                                <input asp-for="telefono" class="form-control" maxlength="9" />
+                                <span asp-validation-for="telefono" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label asp-for="descripcion" class="control-label fw-bold">Descripción:</label>
+                                <textarea asp-for="descripcion" class="form-control" rows="4"></textarea>
+                                <span asp-validation-for="descripcion" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-12" style="margin-top:10px;">
+            <div class="form-group">
+                <input type="submit" value="Actualizar datos" class="btn btn-primary" />
+            </div>
+        </div>
+        <div class="form-group" hidden>
+            <textarea asp-for="contrasenya" class="form-control"></textarea>
+        </div>
+        <div class="form-group" hidden>
+            <textarea asp-for="correo" class="form-control"></textarea>
+        </div>
+        <div class="form-group" hidden>
+            <textarea asp-for="imgPerfil" class="form-control"></textarea>
+        </div>
+        <div class="form-group" hidden>
+            <textarea asp-for="idServidor" class="form-control"></textarea>
+        </div>
+    </form>
+</div>

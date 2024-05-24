@@ -1,0 +1,57 @@
+﻿@model WALKIM.Models.Usuario
+@{
+    var nombreImagenPerfil = Model.imgPerfil ?? "sinFoto.jpg";
+    var animales = ViewBag.Animales as List<WALKIM.Models.TipoAnimal>;
+}
+<div class="container">
+    <div class="row">
+        <div class="col-8">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <img id="profileImage" src="~/IMG/@nombreImagenPerfil" height="225" width="225" style="border-radius:150px;" alt="Imagen de Perfil" />
+                    </div>
+                </div>
+                <div class="col-md-8">
+                        <h3>Datos de la cuenta</h3>
+                        <hr />
+                            <p><strong>Nombre: </strong>@Model.nombre @Model.apellido1 @Model.apellido2</p>
+                            <p><strong>Descripción: </strong>@Model.descripcion</p>
+                </div>
+                <div class="col-12">
+                    <div class="row">
+                        <h4>Mis Mascotas</h4>
+                        <hr />
+                        <div class="row">
+                            @foreach (var mascota in Model.mascotas)
+                            {
+                                var nombreImagenMascota = mascota.imgMascota ?? "sinFoto.jpg";
+                                <div class="col-3 text-center">
+                                    <div class="pet-image-container position-relative d-inline-block">
+                                        <img src="~/IMG/@nombreImagenMascota" class="img-fluid rounded-circle" style="object-fit: cover; width: 150px; height: 150px;" asp-append-version="true" alt="@mascota.nombre" />
+                                        <div class="pet-name-overlay position-absolute w-100 text-center" style="bottom: 0; background: rgba(0, 0, 0, 0.5); color: white;">
+                                            @mascota.nombre
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .pet-image-container {
+        width: 150px;
+        height: 150px;
+    }
+
+    .pet-name-overlay {
+        font-size: 0.8rem;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+    }
+</style>

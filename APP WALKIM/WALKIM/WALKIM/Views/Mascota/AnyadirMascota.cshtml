@@ -1,0 +1,55 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model WALKIM.Models.Mascota
+
+
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <h3>Añadir una nueva Mascota</h3>
+        <form asp-action="AnyadirMascota">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="row">
+                <div class="col-8">
+                    <div class="form-group">
+                        <label asp-for="nombre" class="control-label fw-bold">Nombre:</label>
+                        <input asp-for="nombre" class="form-control" />
+                        <span asp-validation-for="nombre" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="form-group">
+                        <label asp-for="edad" class="control-label fw-bold">Edad:</label>
+                        <input asp-for="edad" class="form-control" maxlength="2" />
+                        <span asp-validation-for="edad" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label asp-for="idTipoAnimal" class="control-label fw-bold">Tipo de animal:</label>
+                    <select asp-for="idTipoAnimal" class="form-control" asp-items="ViewBag.tipoAnimal"></select>
+                </div>
+                <div class="form-group">
+                    <label asp-for="descripcion" class="control-label fw-bold">Descripción:</label>
+                    <textarea asp-for="descripcion" class="form-control" rows="4"></textarea>
+                    <span asp-validation-for="descripcion" class="text-danger"></span>
+                </div>
+                <div class="col-6" style="margin-top:10px;">
+                    <div class="form-group">
+                        <input type="submit" value="Añadir mascota" class="btn btn-primary" />
+                    </div>
+                </div>
+            </div>
+            <div class="form-group" hidden>
+                <input asp-for="idMascota" class="form-control" />
+            </div>
+            <div class="form-group" hidden>
+                <input asp-for="imgMascota" class="form-control" />
+            </div>
+            <div class="form-group" hidden>
+                <input asp-for="idUsuario" class="form-control" />
+            </div>
+        </form>
+    </div>
+</div>

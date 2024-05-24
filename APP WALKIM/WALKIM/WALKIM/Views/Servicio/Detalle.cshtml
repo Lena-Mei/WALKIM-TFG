@@ -1,0 +1,224 @@
+﻿@model WALKIM.Models.Servicio
+
+@{
+    ViewData["Title"] = "Detalles del Servicio";
+
+    var resenyas = ViewBag.Resenyas as List<WALKIM.Models.Resenya>;
+    var tipos = ViewBag.Tipos as List<WALKIM.Models.TipoServicio>;
+    var servidores = ViewBag.Servidores as List<WALKIM.Models.Servidor>;
+    var animales = ViewBag.Animales as List<WALKIM.Models.TipoAnimal>;
+    var usuarios = ViewBag.Usuarios as List<WALKIM.Models.Usuario>;
+}
+@functions {
+    public static string RenderStars(decimal score)
+    {
+        int maxStars = 5;
+        string starsHtml = "";
+        for (int i = 1; i <= maxStars; i++)
+        {
+            if (i <= score)
+            {
+                starsHtml += "<i class='fas fa-star text-warning'></i>"; // Estrella llena
+            }
+            else if (i - 0.5m <= score)
+            {
+                starsHtml += "<i class='fas fa-star-half-alt text-warning'></i>"; // Media estrella
+            }
+            else
+            {
+                starsHtml += "<i class='far fa-star text-warning'></i>"; // Estrella vacía
+            }
+        }
+        return starsHtml;
+    }
+}
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-8">
+            <div class="row">
+                <div class="col-4">
+                    @foreach (var servidor in servidores)
+                    {
+                        if (servidor.idServidor == Model.idServidor)
+                        {
+                            var img = servidor.imgPerfil;
+                        }
+                    }
+                    <img src="~/IMG/2.jpg" class="img-fluid rounded mb-3" />
+                </div>
+                <div class="col-md-8">
+                    <!-- Mostrar los datos del servicio -->
+                    <h2>@Model.nombre</h2>
+                    @foreach (var servidor in servidores)
+                    {
+                        if (servidor.idServidor == Model.idServidor)
+                        {
+                            <p style="font-size:0.7rem"><strong>Creado por: </strong> <a href="@Url.Action("Detalle", "Servidor", new{id=servidor.idServidor})" class="link-success"> @servidor.nombre @servidor.apellido1</a></p>
+                        }
+                    }
+
+                    <p>@Model.descripcion</p>
+                    <p><strong>Precio:</strong> @String.Format("{0:C}", Model.precio)</p>
+                    <p>
+                        <strong>Tipo de servicio: </strong>
+                        @foreach (var tipo in tipos)
+                        {
+                            if (tipo.idTipoServicio == Model.idTipoServicio)
+                            {
+                                @tipo.nombre
+                                ;
+                            }
+                        }
+                    </p>
+                </div>
+                <div class="col-12">
+                    <h3>Tipos de Animales Aceptados</h3>
+                    <hr />
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-12">
+                                <ul class="animal-list">
+                                    @foreach (var tipoAnimal in Model.aceptaTipo)
+                                    {
+                                        @foreach (var animal in animales)
+                                        {
+                                            if (tipoAnimal.idTipoAnimal == animal.idAnimal)
+                                            {
+                                                var ruta = animal.nombre + ".png";
+                                                <li style="font-size:1.2rem;">
+                                                    @animal.nombre
+                                                    <img id="profileImage" src="~/Iconos/@ruta" style="width: 35px; height: 35px; margin-right:5px;" alt="@animal.nombre" />
+                                                </li>
+                                            }
+                                        }
+                                    }
+                                </ul>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="row align-items-center">
+                <div class="col-3">
+                    <h4 style="padding-right:5px">Reseñas</h4>
+                </div>
+                <div class="col-9">
+                    <div class="row align-items-center">
+                        <div class="col-2" style="font-size:1.2rem;">
+                            @Model.puntaje
+                        </div>
+                        <div class="col-6">
+                            @Html.Raw(RenderStars(Model.puntaje)) (@resenyas.Count)
+                        </div>
+                        @if (@resenyas.Count > 2)
+                        {
+                            <div class="col">
+                                <a href="@Url.Action("Detalle", "Resenya", new {idServicio=Model.idServicio})" class="link-primary">Ver más</a>
+                            </div>
+                        }
+                    </div>
+
+                </div>
+            </div>
+            @if (resenyas.Count == 0)
+            {
+                <p class="alert alert-danger">No hay reseñas</p>
+            }
+            else
+            {
+                foreach (var resenya in resenyas.Take(2))
+                {
+
+                    var usuario = usuarios.FirstOrDefault(u => u.idUsuario == resenya.idUsuario);
+                    var img = "";
+                    if (usuario.imgPerfil == null)
+                    {
+                        img = "sinFoto.jpg";
+                    }
+                    else
+                    {
+                        img = usuario.imgPerfil;
+                    }
+                    if (usuario != null)
+                    {
+                        <div class="card mb-3">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <img id="profileImage" src="~/IMG/@img" alt="@usuario.nombre" width="65px" height="65px" style=" border-radius: 50%; margin:5px;">
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="card-body">
+                                        <h5 class="card-title">@usuario.nombre @usuario.apellido1</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted">@resenya.fecha.ToString("dd/MM/yyyy")</h6>
+                                        <p class="card-text">@resenya.comentario</p>
+                                        <p class="card-text">@Html.Raw(RenderStars(resenya.puntaje))</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+
+
+                }
+
+            }
+            @if (User.IsInRole("usuario"))
+            {
+                <a class="btn btn-success" href="@Url.Action("PublicarResenya", "Resenya", new{idServicio= Model.idServicio})">Escribir reseña</a>
+
+            }
+
+
+        </div>
+    </div>
+
+    @if (User.Identity!.IsAuthenticated)
+    {
+        if (User.IsInRole("usuario"))
+        {
+            <div class="row justify-content-center">
+                <div class="col-4 d-grid" style="margin-top:10px;">
+                    <a href="@Url.Action("CrearContrato","Contrato", new{idServicio = Model.idServicio})" class="btn btn-success">Contratar</a>
+                </div>
+            </div>
+        }
+        
+       
+    }
+    else
+    {
+
+        <div class="col-10">
+            <div class="alert alert-danger" role="alert"> <a class="alert-link" asp-area="Identity" asp-page="/Account/Login">Inicia Sesión</a> o <a class="alert-link" asp-area="Identity" asp-page="/Account/Register">Regístrate</a> para contratar</div>
+        </div>
+    }
+
+</div>
+
+<style>
+    .animal-list {
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        list-style-type: none; /* Elimina los puntos de lista */
+    }
+
+        .animal-list li {
+             margin-right: 25px;
+             display: flex;
+             align-items: center;
+        }
+
+    .animal-icon {
+        width: 35px;
+        height: 35px;
+    }
+</style>
+

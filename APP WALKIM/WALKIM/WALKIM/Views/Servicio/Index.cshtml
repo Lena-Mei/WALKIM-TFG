@@ -1,0 +1,57 @@
+﻿@model List<WALKIM.Models.Servicio>
+
+@{
+    var servicios = ViewBag.Tipos as List<WALKIM.Models.TipoServicio>;
+}
+
+
+@if (Model.Count > 0)
+{
+    <div class="row">
+        <div class="col-12">
+            <h2>Servicios</h2>
+            <hr />
+        </div>
+        <div class="col-12">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Nombre</th>
+                        <th>Descripcion</th>
+                        <th>Puntaje</th>
+                        <th>Servicio</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach(var servicio in Model)
+                    {
+                        <tr>
+                            <td>@Html.DisplayFor(model=>servicio.idServicio)</td>
+                            <td>@Html.DisplayFor(model => servicio.nombre)</td>
+                            <td>@Html.DisplayFor(model => servicio.descripcion)</td>
+                            <td>@Html.DisplayFor(model => servicio.puntaje)</td>
+                            <td>
+                                @foreach(var tipo in servicios)
+                                {
+                                    if(servicio.idTipoServicio == tipo.idTipoServicio)
+                                    {
+                                        @tipo.nombre
+                                    }
+                                }
+                            </td>
+                            <td><a href="@Url.Action("ActualizarServicio", "Servicio", new{idServicio=servicio.idServicio})" class="btn btn-warning">Editar</a></td>
+                            <td><a href="@Url.Action("Contratos","Servicio", new{idServicio = servicio.idServicio})" class="btn btn-info">Ver contratos</a></td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+}
+else
+{
+    <p class="alert alert-danger">No se ha creado ningún servicio</p>
+}

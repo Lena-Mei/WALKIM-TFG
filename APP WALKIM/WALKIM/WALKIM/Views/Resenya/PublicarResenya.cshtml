@@ -1,0 +1,69 @@
+﻿@{
+}
+@model WALKIM.Models.Resenya
+
+<div class="row justify-content-center">
+    <div class="col-md-4">
+        <h2 class="text-center">Publicar Reseña</h2>
+        <hr />
+        <form asp-action="PublicarResenya">
+            <div class="form-group">
+                <label asp-for="puntaje" class="control-label fw-bold">Puntaje:</label>
+                <div class="star-rating">
+                    <span class="fa fa-star" data-value="1"></span>
+                    <span class="fa fa-star" data-value="2"></span>
+                    <span class="fa fa-star" data-value="3"></span>
+                    <span class="fa fa-star" data-value="4"></span>
+                    <span class="fa fa-star" data-value="5"></span>
+                </div>
+                <input type="hidden" asp-for="puntaje" id="puntaje" />
+                <span asp-validation-for="puntaje" class="text-danger"></span>
+            </div>
+            <input type="hidden" asp-for="idServicio" id="puntaje" value="@ViewBag.Servicio."/>
+
+            <div class="form-group">
+                <label asp-for="comentario" class="control-label fw-bold">Descripción:</label>
+                <textarea asp-for="comentario" class="form-control" rows="4"></textarea>
+                <span asp-validation-for="comentario" class="text-danger"></span>
+            </div>
+            <div class="col-12 d-grid" style="margin-top:10px;">
+                <input type="submit" value="Publicar reseña" class="btn btn-warning" />
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const stars = document.querySelectorAll('.star-rating .fa-star');
+            const puntajeInput = document.getElementById('puntaje');
+
+            stars.forEach(star => {
+                star.addEventListener('click', function () {
+                    const rating = this.getAttribute('data-value');
+                    puntajeInput.value = rating;
+
+                    stars.forEach(s => {
+                        s.classList.remove('fas', 'text-warning');
+                        s.classList.add('far');
+                    });
+
+                    for (let i = 0; i < rating; i++) {
+                        stars[i].classList.remove('far');
+                        stars[i].classList.add('fas', 'text-warning');
+                    }
+                });
+            });
+        });
+    </script>
+    <style>
+        .star-rating .fa-star {
+            cursor: pointer;
+        }
+
+        .fa-star.fas {
+            color: gold;
+        }
+    </style>
+}

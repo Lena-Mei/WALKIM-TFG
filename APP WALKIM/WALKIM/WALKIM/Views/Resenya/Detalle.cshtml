@@ -1,0 +1,77 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    var usuarios = ViewBag.Usuarios as List<WALKIM.Models.Usuario>;
+
+}
+@model List<WALKIM.Models.Resenya>
+@functions {
+    public static string RenderStars(decimal score)
+    {
+        int maxStars = 5;
+        string starsHtml = "";
+        for (int i = 1; i <= maxStars; i++)
+        {
+            if (i <= score)
+            {
+                starsHtml += "<i class='fas fa-star text-warning'></i>"; // Estrella llena
+            }
+            else if (i - 0.5m <= score)
+            {
+                starsHtml += "<i class='fas fa-star-half-alt text-warning'></i>"; // Media estrella
+            }
+            else
+            {
+                starsHtml += "<i class='far fa-star text-warning'></i>"; // Estrella vacía
+            }
+        }
+        return starsHtml;
+    }
+}
+
+<div class="row">
+    <div class="col-12">
+        <h2>Reseñas</h2>
+        <hr />
+    </div>
+    <div class="col-12">
+        <div class="row">
+            @foreach (var resenya in Model)
+            {
+
+                var usuario = usuarios.FirstOrDefault(u => u.idUsuario == resenya.idUsuario);
+                var img = "";
+                if (usuario.imgPerfil == null)
+                {
+                    img = "sinFoto.jpg";
+                }
+                else
+                {
+                    img = usuario.imgPerfil;
+                }
+                if (usuario != null)
+                {
+                    <div class="col-md-4 mb-4">
+                        <div class="card mb-3">
+                            <div class="row g-0">
+                                <div class="col-md-3 d-flex align-items-center justify-content-center">
+                                    <img id="profileImage" src="~/IMG/@img" class="img-fluid rounded-circle" alt="@usuario.nombre" style="width: 80px; height: 80px; object-fit: cover; margin: 5px;">
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><a href="@Url.Action("DetalleUsuario", "Usuario", new { id = resenya.idUsuario })" class="link link-primary">@usuario.nombre @usuario.apellido1</a></h5>
+                                        <h6 class="card-subtitle mb-2 text-muted">@resenya.fecha.ToString("dd/MM/yyyy")</h6>
+                                        <p class="card-text">@resenya.comentario</p>
+                                        <p class="card-text">@Html.Raw(RenderStars(resenya.puntaje))</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                }
+            }
+        </div>
+    </div>
+</div>

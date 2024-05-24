@@ -1,0 +1,124 @@
+﻿@model WALKIM.Models.Usuario
+
+@{
+    var nombreImagenPerfil = "sinFoto.jpg";
+    if (Model.imgPerfil != null)
+    {
+        nombreImagenPerfil = Model.imgPerfil;
+    }
+
+    var animales = ViewBag.Animales as List<WALKIM.Models.TipoAnimal>;
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="text-center">
+                <img id="profileImage" src="~/IMG/@nombreImagenPerfil" height="225" width="225" style="border-radius:150px; cursor:pointer;" asp-append-version="true" />
+                <form id="imageForm" enctype="multipart/form-data" asp-action="ActImagen" method="post" class="d-none">
+                    <input type="file" name="img" id="imgInput" class="form-control-file" />
+                    <input type="submit" value="Actualizar imagen" class="btn btn-primary mt-2" />
+                </form>
+            </div>
+        </div>
+        <div class="col-md-9">
+            <div class="row">
+                <div class="col-4">
+                    <h3>Datos de la cuenta</h3>
+                </div>
+                <div class="col-7">
+                    <a href="@Url.Action("ActUsuario", "Usuario")" class="btn btn-success">Editar Datos</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <p><strong>Nombre: </strong>@Model.nombre</p>
+                    <p><strong>Apellidos: </strong>@Model.apellido1 @Model.apellido2</p>
+                    <p><strong>Correo: </strong>@Model.correo</p>
+                </div>
+                <div class="col-md-6">
+                    <p><strong>Dirección: </strong>@Model.direccion</p>
+                    <p><strong>Ciudad: </strong>@Model.ciudad </p>
+                    <p><strong>Teléfono:</strong> @Model.telefono</p>
+
+                </div>
+                <div class="col-12">
+                    <p><strong>Descripción: </strong>@Model.descripcion</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-12">
+            <div class="row">
+                <div class="col-2">
+                    <h4>Mis Mascotas</h4>
+                </div>
+                <div class="col-7">
+                    <a href="@Url.Action("AnyadirMascota", "Mascota")" class="btn btn-success">Añadir Mascota</a>
+                </div>
+            </div>
+           
+            <hr />
+        </div>
+    </div>
+    <div class="row">
+        @if (Model.mascotas.Count == 0)
+        {
+            <p class="alert alert-danger">No se ha registrado ninguna mascota</p>
+        }
+        else
+        {
+            @foreach (var mascota in Model.mascotas)
+            {
+
+                var nombreImagenMascota = "sinFoto.jpg";
+                if (mascota.imgMascota != null)
+                {
+                    nombreImagenMascota = mascota.imgMascota;
+                }
+                <div class="col-md-4 mb-4">
+                    <a href="@Url.Action("MascotaDetalle", "Mascota", new { idMascota = mascota.idMascota })" class="text-decoration-none text-dark">
+                        <div class="card h-100 shadow-sm">
+                            <div class="row g-0">
+                                <div class="col-4" style="position: relative;">
+                                    <img src="~/IMG/@nombreImagenMascota" class="img-fluid rounded-start w-100 h-100" style="object-fit: cover;" asp-append-version="true" alt="@mascota.nombre" />
+                                </div>
+                                <div class="col-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">@mascota.nombre</h5>
+                                        <p class="card-text"><strong>Edad: </strong>@mascota.edad años</p>
+                                        <p class="card-text">
+                                            <strong>Tipo de Animal: </strong>
+                                            @foreach (var tipoAnimal in animales)
+                                            {
+                                                if (tipoAnimal.idAnimal == mascota.idTipoAnimal)
+                                                {
+                                                    @tipoAnimal.descripcion
+                                                }
+                                            }
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            }
+        }
+       
+     
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        document.getElementById('profileImage').onclick = function () {
+            document.getElementById('imgInput').click();
+        };
+
+        document.getElementById('imgInput').onchange = function () {
+            document.getElementById('imageForm').submit();
+        };
+    </script>
+}

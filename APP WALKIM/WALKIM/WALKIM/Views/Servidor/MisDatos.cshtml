@@ -1,0 +1,123 @@
+﻿@model WALKIM.Models.Servidor
+@{
+    var img = "sinFoto.jpg";
+    if(Model.imgPerfil != null)
+    {
+        img = Model.imgPerfil;
+    }
+
+    var servicios = ViewBag.Servicios as List<WALKIM.Models.Servicio>;
+    var tipos = ViewBag.TipoAnimal as List<WALKIM.Models.TipoServicio>;
+}
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="text-center">
+                <img id="profileImage" src="~/IMG/@img" height="225" width="225" style="border-radius:150px; cursor:pointer;" asp-append-version="true" />
+                <form id="imageForm" enctype="multipart/form-data" asp-action="ActImagen" method="post" class="d-none">
+                    <input type="file" name="img" id="imgInput" class="form-control-file" />
+                    <input type="submit" value="Actualizar imagen" class="btn btn-primary mt-2" />
+                </form>
+            </div>
+        </div>
+        <div class="col-md-9">
+            <div class="row">
+                <div class="col-4">
+                    <h3>Datos de la Cuenta</h3>
+                </div>
+                <div class="col-4">
+                    <a href="@Url.Action("ActServidor", "Servidor")" class="btn btn-success">Actualizar Datos</a>
+                </div>
+            </div>
+           
+            <hr />
+            <div class="row">
+                <div class="col-md-6">
+                    <p><strong>Nombre: </strong>@Model.nombre</p>
+                    <p><strong>Apellidos: </strong>@Model.apellido1 @Model.apellido2</p>
+                    <p><strong>Correo: </strong>@Model.correo</p>
+                </div>
+                <div class="col-md-6">
+                    <p><strong>Dirección: </strong>@Model.direccion</p>
+                    <p><strong>Ciudad: </strong>@Model.ciudad</p>
+                    <p><strong>Teléfono: </strong>@Model.telefono</p>
+                </div>
+                <div class="col-12">
+                    <p><strong>Descripción: </strong>@Model.descripcion</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    @if (Model.idEstado == 6)
+    {
+        <p style="margin-top:20px;" class="alert alert-secondary">La cuenta está en estado <strong>PENDIENTE</strong>. Aún no puedes publicar ningún servicio. Debes de añadir los archivos necesarios. Si ya lo has hecho, debes de esperar a que el administrador actualice el estado de la cuenta. De lo contrario, dale click <a class="alert-link" href="@Url.Action("SubirArchivos", "Archivo")">aquí</a> para subir los archivos.</p>
+    }
+    else if(Model.idEstado == 5)
+    {
+        <p style="margin-top:20px;" class="alert alert-danger">El administrador ha denegado el registro de la cuenta. Si tienes algún problema, abre un <a href="@Url.Action("CrearTicket","Ticket")" class="alert-link">Ticket.</a></p>
+    }
+    else
+    {
+        <div class="row mt-5">
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-2">
+                        <h4>Servicios (@servicios.Count())</h4>
+                    </div>
+                    <div class="col-4">
+                        <a href="@Url.Action("Index", "Servicio")" class="btn btn-success">Editar Servicios</a>
+                    </div>
+                </div>
+                <hr />
+            </div>
+        </div>
+        <div class="row">
+            @foreach (var servicio in servicios.Take(4))
+            {
+                if (servicio.idServidor == Model.idServidor)
+                {
+                    <div class="col-md-4 mb-4">
+                        <a href="@Url.Action("Detalle", "Servicio", new{idServicio = servicio.idServicio}) " class="text-decoration-none text-dark">
+                            <div class="card h-100 shadow-sm">
+                                <div class="row g-0">
+                                    <div class="col-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">@servicio.nombre</h5>
+                                            <p class="card-text">@servicio.descripcion</p>
+                                            <p class="card-text">
+                                                <strong>Servicio: </strong>
+                                                @foreach (var tipo in tipos)
+                                                {
+                                                    if (tipo.idTipoServicio == servicio.idTipoServicio)
+                                                    {
+                                                        @tipo.nombre
+                                                    }
+                                                }
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                }
+
+            }
+        </div>
+    }
+   
+</div>
+
+@section Scripts {
+    <script>
+        document.getElementById('profileImage').onclick = function () {
+            document.getElementById('imgInput').click();
+        };
+
+        document.getElementById('imgInput').onchange = function () {
+            document.getElementById('imageForm').submit();
+        };
+    </script>
+}

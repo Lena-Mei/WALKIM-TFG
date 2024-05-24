@@ -1,0 +1,63 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    var usuarios = ViewBag.Usuarios as List<WALKIM.Models.Usuario>;
+    var estados = ViewBag.Estados as List<WALKIM.Models.Estado>;
+
+
+}
+
+@model WALKIM.Models.Servicio
+
+@if (Model.contratos.Count == 0)
+{
+    <p class="alert alert-danger">No se ha realizado ningún contrato en este servicio.</p>
+}
+else
+{
+    <h4>Contratos del servicio</h4>
+    <hr />
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Usuario</th>
+                <th>Fecha</th>
+                <th>Tiempo</th>
+                <th>Estado</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                @foreach(var contrato in Model.contratos)
+                {
+                    <td>
+                        @foreach(var usuario in usuarios)
+                        {
+                            if (usuario.idUsuario == contrato.idUsuario)
+                            {
+                                <a href="@Url.Action("DetalleUsuario", "Usuario", new{id=usuario.idUsuario})"> @usuario.correo</a>
+                            }
+                        }
+                    </td>
+                    <td>@contrato.fecha</td>
+                    <td>@contrato.tiempo</td>
+                    <td>
+                        @foreach(var estado in estados)
+                        {
+                            if(estado.idEstado == contrato.idEstado)
+                            {
+                                @estado.nombre
+                            }
+                        }
+                    </td>
+                    <td><a class="btn btn-warning" href="@Url.Action("DetalleContrato", "Contrato", new{idContrato=contrato.idContrato})" >Detalles</a></td>
+                }
+            </tr>
+        </tbody>
+    </table>
+    
+}
+
+

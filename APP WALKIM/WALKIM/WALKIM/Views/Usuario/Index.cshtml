@@ -1,0 +1,21 @@
+﻿@model List<WALKIM.Models.Usuario>
+@{
+}
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Correo</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var usuario in Model)
+        {
+            <tr>
+                <td>@usuario.idUsuario</td>
+                <td>@usuario.correo</td>
+            </tr>
+           
+        }
+    </tbody>
+</table>

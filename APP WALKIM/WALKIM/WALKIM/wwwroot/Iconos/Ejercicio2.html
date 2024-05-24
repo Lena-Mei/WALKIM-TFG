@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Ejercicio 2</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        
+        body{
+            background-image: url(recursos_practica_posicionamiento/cielo.png) ;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+        }
+
+        .cielo{
+            margin:-10;
+        }
+        .avion{
+            z-index: 0;
+           right:0;
+            top:0;
+        }
+        .pajaro{
+            z-index: 1;
+            right:0;
+            top:0;
+
+        }
+        .sol{
+            z-index: 3;
+        }
+        .suelo{
+            z-index: 0;
+            bottom:0;
+        }
+        .moto{
+            z-index: 1;
+            bottom:0;
+        }
+         
+        .moto img{
+            margin-left:500px;
+            margin-bottom:30px;
+        }
+        .img{
+            position:absolute;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <!--<div class="img cielo"><img src="recursos_practica_posicionamiento/cielo.png" height=""></div>-->
+        <div class="img avion"><img src="recursos_practica_posicionamiento/avion.png" height="300px"></div>
+        <div class="img pajaro"><img src="recursos_practica_posicionamiento/pajaros.png" height="350px"></div>
+        <div class="img sol"><img src="recursos_practica_posicionamiento/sol.png" height="300px"></div>
+        <div class="img suelo"><img src="recursos_practica_posicionamiento/carretera.png" height="554px"></div>
+        <div class="img moto"><img src="recursos_practica_posicionamiento/motorista.png" height="500px"></div>
+    </div>
+</body>
+</html>

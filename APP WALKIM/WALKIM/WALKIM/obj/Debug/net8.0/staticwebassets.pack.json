@@ -1,0 +1,361 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\WALKIM.bundle.scp.css",
+      "PackagePath": "staticwebassets\\WALKIM.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\IMG\\2.jpg",
+      "PackagePath": "staticwebassets\\IMG\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\IMG\\5.jpg",
+      "PackagePath": "staticwebassets\\IMG\\5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\IMG\\queFuncioneporfavor.jpg",
+      "PackagePath": "staticwebassets\\IMG\\queFuncioneporfavor.jpg"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\IMG\\sinFoto.jpg",
+      "PackagePath": "staticwebassets\\IMG\\sinFoto.jpg"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\Iconos\\Conejo.png",
+      "PackagePath": "staticwebassets\\Iconos\\Conejo.png"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\Iconos\\Ejercicio2.html",
+      "PackagePath": "staticwebassets\\Iconos\\Ejercicio2.html"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\Iconos\\Gato con ayuda.png",
+      "PackagePath": "staticwebassets\\Iconos\\Gato con ayuda.png"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\Iconos\\Gato.png",
+      "PackagePath": "staticwebassets\\Iconos\\Gato.png"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\Iconos\\Hurón.png",
+      "PackagePath": "staticwebassets\\Iconos\\Hurón.png"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\Iconos\\KIM.png",
+      "PackagePath": "staticwebassets\\Iconos\\KIM.png"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\Iconos\\PERRY.png",
+      "PackagePath": "staticwebassets\\Iconos\\PERRY.png"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\Iconos\\Perro con ayuda.png",
+      "PackagePath": "staticwebassets\\Iconos\\Perro con ayuda.png"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\Iconos\\Perro.png",
+      "PackagePath": "staticwebassets\\Iconos\\Perro.png"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\Iconos\\Tortuga.png",
+      "PackagePath": "staticwebassets\\Iconos\\Tortuga.png"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\Iconos\\box-arrow-right.svg",
+      "PackagePath": "staticwebassets\\Iconos\\box-arrow-right.svg"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\Iconos\\cesped.png",
+      "PackagePath": "staticwebassets\\Iconos\\cesped.png"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\Iconos\\iniciar.svg",
+      "PackagePath": "staticwebassets\\Iconos\\iniciar.svg"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\Iconos\\kkk.png",
+      "PackagePath": "staticwebassets\\Iconos\\kkk.png"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\Iconos\\logo.png",
+      "PackagePath": "staticwebassets\\Iconos\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\Iconos\\person-add.svg",
+      "PackagePath": "staticwebassets\\Iconos\\person-add.svg"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\Iconos\\person-circle.svg",
+      "PackagePath": "staticwebassets\\Iconos\\person-circle.svg"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\Iconos\\registrar.svg",
+      "PackagePath": "staticwebassets\\Iconos\\registrar.svg"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\Iconos\\salir.svg",
+      "PackagePath": "staticwebassets\\Iconos\\salir.svg"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\Iconos\\usuario.svg",
+      "PackagePath": "staticwebassets\\Iconos\\usuario.svg"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.WALKIM.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.WALKIM.props",
+      "PackagePath": "build\\WALKIM.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.WALKIM.props",
+      "PackagePath": "buildMultiTargeting\\WALKIM.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.WALKIM.props",
+      "PackagePath": "buildTransitive\\WALKIM.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

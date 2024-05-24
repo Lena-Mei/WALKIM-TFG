@@ -1,0 +1,126 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{91EEAD29-B51A-4E17-88D3-D5FFEE2AD1D4}|WALKIM\\WALKIM.csproj|c:\\users\\lmaciabo\\onedrive - ntt data emeal\\escritorio\\tfg\\app walkim\\walkim\\walkim\\walkim\\models\\estado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91EEAD29-B51A-4E17-88D3-D5FFEE2AD1D4}|WALKIM\\WALKIM.csproj|solutionrelative:walkim\\models\\estado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91EEAD29-B51A-4E17-88D3-D5FFEE2AD1D4}|WALKIM\\WALKIM.csproj|c:\\users\\lmaciabo\\onedrive - ntt data emeal\\escritorio\\tfg\\app walkim\\walkim\\walkim\\walkim\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91EEAD29-B51A-4E17-88D3-D5FFEE2AD1D4}|WALKIM\\WALKIM.csproj|solutionrelative:walkim\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91EEAD29-B51A-4E17-88D3-D5FFEE2AD1D4}|WALKIM\\WALKIM.csproj|c:\\users\\lmaciabo\\onedrive - ntt data emeal\\escritorio\\tfg\\app walkim\\walkim\\walkim\\walkim\\models\\walkimcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91EEAD29-B51A-4E17-88D3-D5FFEE2AD1D4}|WALKIM\\WALKIM.csproj|solutionrelative:walkim\\models\\walkimcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91EEAD29-B51A-4E17-88D3-D5FFEE2AD1D4}|WALKIM\\WALKIM.csproj|c:\\users\\lmaciabo\\onedrive - ntt data emeal\\escritorio\\tfg\\app walkim\\walkim\\walkim\\walkim\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{91EEAD29-B51A-4E17-88D3-D5FFEE2AD1D4}|WALKIM\\WALKIM.csproj|solutionrelative:walkim\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91EEAD29-B51A-4E17-88D3-D5FFEE2AD1D4}|WALKIM\\WALKIM.csproj|c:\\users\\lmaciabo\\onedrive - ntt data emeal\\escritorio\\tfg\\app walkim\\walkim\\walkim\\walkim\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{91EEAD29-B51A-4E17-88D3-D5FFEE2AD1D4}|WALKIM\\WALKIM.csproj|solutionrelative:walkim\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91EEAD29-B51A-4E17-88D3-D5FFEE2AD1D4}|WALKIM\\WALKIM.csproj|c:\\users\\lmaciabo\\onedrive - ntt data emeal\\escritorio\\tfg\\app walkim\\walkim\\walkim\\walkim\\controllers\\estadoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91EEAD29-B51A-4E17-88D3-D5FFEE2AD1D4}|WALKIM\\WALKIM.csproj|solutionrelative:walkim\\controllers\\estadoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 289,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Estado.cs",
+              "DocumentMoniker": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\WALKIM\\Models\\Estado.cs",
+              "RelativeDocumentMoniker": "WALKIM\\Models\\Estado.cs",
+              "ToolTip": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\WALKIM\\Models\\Estado.cs",
+              "RelativeToolTip": "WALKIM\\Models\\Estado.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T10:53:21.796Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WalkimContext.cs",
+              "DocumentMoniker": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\WALKIM\\Models\\WalkimContext.cs",
+              "RelativeDocumentMoniker": "WALKIM\\Models\\WalkimContext.cs",
+              "ToolTip": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\WALKIM\\Models\\WalkimContext.cs",
+              "RelativeToolTip": "WALKIM\\Models\\WalkimContext.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwDAAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T10:01:49.204Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\WALKIM\\appsettings.json",
+              "RelativeDocumentMoniker": "WALKIM\\appsettings.json",
+              "ToolTip": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\WALKIM\\appsettings.json",
+              "RelativeToolTip": "WALKIM\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-12T08:41:41.12Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\WALKIM\\Program.cs",
+              "RelativeDocumentMoniker": "WALKIM\\Program.cs",
+              "ToolTip": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\WALKIM\\Program.cs",
+              "RelativeToolTip": "WALKIM\\Program.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAIwCAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T10:07:22.208Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EstadosController.cs",
+              "DocumentMoniker": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\WALKIM\\Controllers\\EstadosController.cs",
+              "RelativeDocumentMoniker": "WALKIM\\Controllers\\EstadosController.cs",
+              "ToolTip": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\WALKIM\\Controllers\\EstadosController.cs",
+              "RelativeToolTip": "WALKIM\\Controllers\\EstadosController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T10:04:11.491Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\WALKIM\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "WALKIM\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\WALKIM\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "WALKIM\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABkAAABdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-12T10:04:27.438Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

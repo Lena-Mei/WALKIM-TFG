@@ -1,0 +1,6 @@
+@APIWALKIM_HostAddress = http://localhost:5269
+
+GET {{APIWALKIM_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

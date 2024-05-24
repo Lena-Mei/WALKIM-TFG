@@ -1,0 +1,29 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model WALKIM.Models.Ticket
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <h2 class="text-center">Crear Ticket sobre un problema</h2>
+        <form asp-action="CrearTicket">
+            <div class="form-group">
+                <label asp-for="tituloProblema" class="control-label fw-bold">Título del problema del problema:</label>
+                <input asp-for="tituloProblema" class="form-control" />
+            </div>
+            <div class="col-12">
+                <div class="form-group">
+                    <label asp-for="descripcion" class="control-label fw-bold">Descripción del problema:</label>
+                    <textarea asp-for="descripcion" class="form-control" rows="4"></textarea>
+                    <span asp-validation-for="descripcion" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-12 align-self-center d-grid gap-2" style="margin-top:10px;">
+                <input type="submit" value="Crear ticket" class="btn btn-primary" />
+        </form>
+    </div>
+</div>
+
+
+</div>

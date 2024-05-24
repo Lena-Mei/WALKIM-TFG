@@ -1,0 +1,54 @@
+﻿@{
+    var mascotas = ViewBag.Mascotas as List<WALKIM.Models.Mascota>;
+    var servicio = ViewBag.Servicio as WALKIM.Models.Servicio;
+    int idSer = int.Parse(ViewBag.IDSer.ToString());
+
+}
+@model WALKIM.Models.Contrata
+
+<div class="row justify-content-center">
+    <div class="col-md-4">
+        <h2 class="text-center">Contratar Servicio</h2>
+        <hr />
+        <form asp-action="CrearContrato">
+            <div class="form-group">
+                <label class="form-label fw-bold">Fecha de Servicio:</label> <br />
+                <input asp-for="fecha" type="date" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label class="form-label fw-bold">Duración:</label><br />
+                <input asp-for="tiempo" class="form-control" />
+            </div>
+         
+
+            <h4>Elegir mascotas para el servicio:</h4>
+            <div class="container">
+                <div class="row">
+                    @foreach (var mascota in mascotas)
+                    {
+                        var isAccepted = servicio.aceptaTipo.Any(t => t.idTipoAnimal == mascota.idTipoAnimal);
+                        <div class="col">
+                            <div class="form-check">
+                                <input class="form-check-input" name="mascotaSeleccionado" type="checkbox" value="@mascota.idMascota" @(isAccepted ? "" : "disabled") />
+                                <label class="form-check-label">
+                                    @mascota.nombre
+                                </label>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+
+            <div class="col-12 d-grid" style="margin-top:10px;">
+                <input type="submit" value="Contratar" class="btn btn-outline-secondary" />
+            </div>
+            <div class="form-group" hidden>
+                <label class="form-label fw-bold">id:</label><br />
+                <input asp-for="idServicio" value="@idSer" class="form-control" />
+            </div>
+        </form>
+        <div class="mt-3">
+            <small>* Las mascotas que no se pueden seleccionar es debido a que el servicio no acepta ese tipo de animales.</small>
+        </div>
+    </div>
+</div>

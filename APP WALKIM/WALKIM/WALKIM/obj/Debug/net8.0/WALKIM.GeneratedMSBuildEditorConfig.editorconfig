@@ -1,0 +1,155 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = WALKIM
+build_property.RootNamespace = WALKIM
+build_property.ProjectDir = C:\Users\lmaciabo\OneDrive - NTT DATA EMEAL\Escritorio\TFG\APP WALKIM\WALKIM\WALKIM\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\lmaciabo\OneDrive - NTT DATA EMEAL\Escritorio\TFG\APP WALKIM\WALKIM\WALKIM
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/lmaciabo/OneDrive - NTT DATA EMEAL/Escritorio/TFG/APP WALKIM/WALKIM/WALKIM/Views/Contrato/CrearContrato.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udHJhdG9cQ3JlYXJDb250cmF0by5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lmaciabo/OneDrive - NTT DATA EMEAL/Escritorio/TFG/APP WALKIM/WALKIM/WALKIM/Views/Contrato/DetalleContrato.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udHJhdG9cRGV0YWxsZUNvbnRyYXRvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lmaciabo/OneDrive - NTT DATA EMEAL/Escritorio/TFG/APP WALKIM/WALKIM/WALKIM/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lmaciabo/OneDrive - NTT DATA EMEAL/Escritorio/TFG/APP WALKIM/WALKIM/WALKIM/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lmaciabo/OneDrive - NTT DATA EMEAL/Escritorio/TFG/APP WALKIM/WALKIM/WALKIM/Views/Login/ElegirRol.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cRWxlZ2lyUm9sLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lmaciabo/OneDrive - NTT DATA EMEAL/Escritorio/TFG/APP WALKIM/WALKIM/WALKIM/Views/Login/IniciarSesion.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5pY2lhclNlc2lvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lmaciabo/OneDrive - NTT DATA EMEAL/Escritorio/TFG/APP WALKIM/WALKIM/WALKIM/Views/Login/RegistrarServidor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cUmVnaXN0cmFyU2Vydmlkb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lmaciabo/OneDrive - NTT DATA EMEAL/Escritorio/TFG/APP WALKIM/WALKIM/WALKIM/Views/Login/RegistrarUsuario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cUmVnaXN0cmFyVXN1YXJpby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lmaciabo/OneDrive - NTT DATA EMEAL/Escritorio/TFG/APP WALKIM/WALKIM/WALKIM/Views/Mascota/ActMascota.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFzY290YVxBY3RNYXNjb3RhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lmaciabo/OneDrive - NTT DATA EMEAL/Escritorio/TFG/APP WALKIM/WALKIM/WALKIM/Views/Mascota/AnyadirMascota.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFzY290YVxBbnlhZGlyTWFzY290YS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lmaciabo/OneDrive - NTT DATA EMEAL/Escritorio/TFG/APP WALKIM/WALKIM/WALKIM/Views/Mascota/MascotaDetalle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFzY290YVxNYXNjb3RhRGV0YWxsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lmaciabo/OneDrive - NTT DATA EMEAL/Escritorio/TFG/APP WALKIM/WALKIM/WALKIM/Views/Resenya/Detalle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZW55YVxEZXRhbGxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lmaciabo/OneDrive - NTT DATA EMEAL/Escritorio/TFG/APP WALKIM/WALKIM/WALKIM/Views/Resenya/PublicarResenya.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZW55YVxQdWJsaWNhclJlc2VueWEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lmaciabo/OneDrive - NTT DATA EMEAL/Escritorio/TFG/APP WALKIM/WALKIM/WALKIM/Views/Servicio/ActualizarServicio.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljaW9cQWN0dWFsaXphclNlcnZpY2lvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lmaciabo/OneDrive - NTT DATA EMEAL/Escritorio/TFG/APP WALKIM/WALKIM/WALKIM/Views/Servicio/Contratos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljaW9cQ29udHJhdG9zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lmaciabo/OneDrive - NTT DATA EMEAL/Escritorio/TFG/APP WALKIM/WALKIM/WALKIM/Views/Servicio/CrearServicio.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljaW9cQ3JlYXJTZXJ2aWNpby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lmaciabo/OneDrive - NTT DATA EMEAL/Escritorio/TFG/APP WALKIM/WALKIM/WALKIM/Views/Servicio/Detalle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljaW9cRGV0YWxsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lmaciabo/OneDrive - NTT DATA EMEAL/Escritorio/TFG/APP WALKIM/WALKIM/WALKIM/Views/Servicio/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljaW9cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lmaciabo/OneDrive - NTT DATA EMEAL/Escritorio/TFG/APP WALKIM/WALKIM/WALKIM/Views/Servidor/ActServidor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2Vydmlkb3JcQWN0U2Vydmlkb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lmaciabo/OneDrive - NTT DATA EMEAL/Escritorio/TFG/APP WALKIM/WALKIM/WALKIM/Views/Servidor/Detalle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2Vydmlkb3JcRGV0YWxsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lmaciabo/OneDrive - NTT DATA EMEAL/Escritorio/TFG/APP WALKIM/WALKIM/WALKIM/Views/Servidor/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2Vydmlkb3JcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lmaciabo/OneDrive - NTT DATA EMEAL/Escritorio/TFG/APP WALKIM/WALKIM/WALKIM/Views/Servidor/MisDatos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2Vydmlkb3JcTWlzRGF0b3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lmaciabo/OneDrive - NTT DATA EMEAL/Escritorio/TFG/APP WALKIM/WALKIM/WALKIM/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lmaciabo/OneDrive - NTT DATA EMEAL/Escritorio/TFG/APP WALKIM/WALKIM/WALKIM/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lmaciabo/OneDrive - NTT DATA EMEAL/Escritorio/TFG/APP WALKIM/WALKIM/WALKIM/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lmaciabo/OneDrive - NTT DATA EMEAL/Escritorio/TFG/APP WALKIM/WALKIM/WALKIM/Views/Ticket/CrearTicket.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlja2V0XENyZWFyVGlja2V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lmaciabo/OneDrive - NTT DATA EMEAL/Escritorio/TFG/APP WALKIM/WALKIM/WALKIM/Views/Usuario/ActUsuario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xBY3RVc3VhcmlvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lmaciabo/OneDrive - NTT DATA EMEAL/Escritorio/TFG/APP WALKIM/WALKIM/WALKIM/Views/Usuario/DetalleUsuario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xEZXRhbGxlVXN1YXJpby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lmaciabo/OneDrive - NTT DATA EMEAL/Escritorio/TFG/APP WALKIM/WALKIM/WALKIM/Views/Usuario/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lmaciabo/OneDrive - NTT DATA EMEAL/Escritorio/TFG/APP WALKIM/WALKIM/WALKIM/Views/Usuario/MisContratos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xNaXNDb250cmF0b3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lmaciabo/OneDrive - NTT DATA EMEAL/Escritorio/TFG/APP WALKIM/WALKIM/WALKIM/Views/Usuario/MisDatos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xNaXNEYXRvcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lmaciabo/OneDrive - NTT DATA EMEAL/Escritorio/TFG/APP WALKIM/WALKIM/WALKIM/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lmaciabo/OneDrive - NTT DATA EMEAL/Escritorio/TFG/APP WALKIM/WALKIM/WALKIM/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lmaciabo/OneDrive - NTT DATA EMEAL/Escritorio/TFG/APP WALKIM/WALKIM/WALKIM/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-shelemvn68

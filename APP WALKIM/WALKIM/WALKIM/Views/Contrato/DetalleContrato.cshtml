@@ -1,0 +1,149 @@
+﻿@{
+    var usuarios = ViewBag.Usuarios as WALKIM.Models.Usuario;
+    var servicio = ViewBag.Servicio as WALKIM.Models.Servicio;
+    var estados = ViewBag.Estados as List<WALKIM.Models.Estado>;
+    var animales = ViewBag.Animales as List<WALKIM.Models.TipoAnimal>;
+
+    var img = "sinFoto.jpg";
+
+}
+@model WALKIM.Models.Contrata
+
+<div class="row">
+    <div class="col-12">
+        <div class="row">
+            <div class="col-6">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="row">
+                            <h4>Detalles Contrato</h4>
+                            <hr />
+                            <div class="col-2">
+                                <p class="fw-bold">Usuario:</p>
+                            </div>
+                            <div class="col-10">
+                                <p>@usuarios.nombre @usuarios.apellido1 @usuarios.apellido2</p>
+                            </div>
+                            <div class="col-2">
+                                <p class="fw-bold">Servicio:</p>
+                            </div>
+                            <div class="col-10">
+                                @servicio.nombre
+                            </div>
+                            <div class="col-2">
+                                <p class="fw-bold">Fecha:</p>
+                            </div>
+                            <div class="col-10">
+                                @Model.fecha.ToString("dd/MM/yyyy")
+                            </div>
+                            <div class="col-2">
+                                <p class="fw-bold">Tiempo:</p>
+                            </div>
+                            <div class="col-10">
+                                @Model.tiempo
+                            </div>
+                            <div class="col-2">
+                                <p class="fw-bold">Estado:</p>
+                            </div>
+                            <div class="col-10">
+                                @foreach (var estado in estados)
+                                {
+                                    if (estado.idEstado == Model.idEstado)
+                                    {
+                                        @estado.nombre
+                                        ;
+                                    }
+                                }
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-12">
+                                @if (User.IsInRole("servidor"))
+                                {
+                                    <h3>Actualizar Estado del Contrato</h3>
+                                }
+                                else
+                                {
+                                    <h3>Estado del Contrato</h3>
+                                }
+
+                                <hr />
+                                <div class="col-12">
+                                    @foreach (var estado in estados)
+                                    {
+                                        if (estado.idEstado == Model.idEstado)
+                                        {
+                                            <p class="alert alert-@(Model.idEstado == 1 ? "secondary" : Model.idEstado == 2 ? "success" : Model.idEstado == 3 ? "danger" : Model.idEstado == 7 ? "warning" : "info")">
+                                                @estado.descripcion
+                                            </p>
+                                        }
+                                    }
+                                </div>
+                                @if (User.IsInRole("servidor"))
+                                {
+                                    @if (Model.idEstado == 1)
+                                    {
+                                        <a href="@Url.Action("ActEstado", "Contrato", new { idEstado = 2, idContrato = Model.idContrato })" class="btn btn-success">Aceptar Contrato</a>
+                                        <a href="@Url.Action("ActEstado", "Contrato", new { idEstado = 3, idContrato = Model.idContrato })" class="btn btn-danger">Rechazar Contrato</a>
+                                    }
+                                    else if (Model.idEstado == 2)
+                                    {
+                                        <a href="@Url.Action("ActEstado", "Contrato", new { idEstado = 7, idContrato = Model.idContrato })" class="btn btn-warning">Servicio Realizado</a>
+                                    }
+                                }
+                             
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="col-6">
+                <div class="row">
+
+                
+                <h4>Mascotas Contrato</h4>
+                <hr />
+                <div class="col-12">
+                    <div class="row">
+                        @foreach (var mascotaContrato in Model.listaMascotas)
+                        {
+                            var mascota = usuarios.mascotas.FirstOrDefault(m => m.idMascota == mascotaContrato.idMascota);
+                            if (mascota != null)
+                            {
+                                <div class="card mb-3" style="max-width: 540px;">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                                @if(mascota.imgMascota !=null || mascota.imgMascota != "")
+                                                {
+                                                    img = mascota.imgMascota;
+                                                }
+                                                <img src="~/IMG/@img" class="img-fluid rounded-start w-100 h-100" style="object-fit: cover;" alt="@mascota.nombre">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">@mascota.nombre</h5>
+                                                <p class="card-text"><strong>Edad:</strong> @mascota.edad años</p>
+                                                <p class="card-text"><strong>Descripción:</strong> @mascota.descripcion</p>
+                                                <p class="card-text">
+                                                    <strong>Tipo de Animal:</strong> 
+                                                    @animales.FirstOrDefault(a => a.idAnimal == mascota.idTipoAnimal)?.nombre
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        }
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+  
+</div>
