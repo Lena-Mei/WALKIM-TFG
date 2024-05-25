@@ -41,6 +41,7 @@ C:\Users\lmaciabo\OneDrive - NTT DATA EMEAL\Escritorio\TFG\APP WALKIM\WALKIM\WAL
 C:\Users\lmaciabo\OneDrive - NTT DATA EMEAL\Escritorio\TFG\APP WALKIM\WALKIM\WALKIM\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
 C:\Users\lmaciabo\OneDrive - NTT DATA EMEAL\Escritorio\TFG\APP WALKIM\WALKIM\WALKIM\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\lmaciabo\OneDrive - NTT DATA EMEAL\Escritorio\TFG\APP WALKIM\WALKIM\WALKIM\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\Users\lmaciabo\OneDrive - NTT DATA EMEAL\Escritorio\TFG\APP WALKIM\WALKIM\WALKIM\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\Users\lmaciabo\OneDrive - NTT DATA EMEAL\Escritorio\TFG\APP WALKIM\WALKIM\WALKIM\bin\Debug\net8.0\System.CodeDom.dll
 C:\Users\lmaciabo\OneDrive - NTT DATA EMEAL\Escritorio\TFG\APP WALKIM\WALKIM\WALKIM\bin\Debug\net8.0\System.Composition.AttributedModel.dll
 C:\Users\lmaciabo\OneDrive - NTT DATA EMEAL\Escritorio\TFG\APP WALKIM\WALKIM\WALKIM\bin\Debug\net8.0\System.Composition.Convention.dll
@@ -128,6 +129,7 @@ C:\Users\lmaciabo\OneDrive - NTT DATA EMEAL\Escritorio\TFG\APP WALKIM\WALKIM\WAL
 C:\Users\lmaciabo\OneDrive - NTT DATA EMEAL\Escritorio\TFG\APP WALKIM\WALKIM\WALKIM\obj\Debug\net8.0\WALKIM.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\lmaciabo\OneDrive - NTT DATA EMEAL\Escritorio\TFG\APP WALKIM\WALKIM\WALKIM\obj\Debug\net8.0\WALKIM.RazorAssemblyInfo.cache
 C:\Users\lmaciabo\OneDrive - NTT DATA EMEAL\Escritorio\TFG\APP WALKIM\WALKIM\WALKIM\obj\Debug\net8.0\WALKIM.RazorAssemblyInfo.cs
+C:\Users\lmaciabo\OneDrive - NTT DATA EMEAL\Escritorio\TFG\APP WALKIM\WALKIM\WALKIM\obj\Debug\net8.0\WALKIM.sourcelink.json
 C:\Users\lmaciabo\OneDrive - NTT DATA EMEAL\Escritorio\TFG\APP WALKIM\WALKIM\WALKIM\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\lmaciabo\OneDrive - NTT DATA EMEAL\Escritorio\TFG\APP WALKIM\WALKIM\WALKIM\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\lmaciabo\OneDrive - NTT DATA EMEAL\Escritorio\TFG\APP WALKIM\WALKIM\WALKIM\obj\Debug\net8.0\staticwebassets\msbuild.WALKIM.Microsoft.AspNetCore.StaticWebAssets.props
@@ -144,4 +146,3 @@ C:\Users\lmaciabo\OneDrive - NTT DATA EMEAL\Escritorio\TFG\APP WALKIM\WALKIM\WAL
 C:\Users\lmaciabo\OneDrive - NTT DATA EMEAL\Escritorio\TFG\APP WALKIM\WALKIM\WALKIM\obj\Debug\net8.0\WALKIM.pdb
 C:\Users\lmaciabo\OneDrive - NTT DATA EMEAL\Escritorio\TFG\APP WALKIM\WALKIM\WALKIM\obj\Debug\net8.0\WALKIM.genruntimeconfig.cache
 C:\Users\lmaciabo\OneDrive - NTT DATA EMEAL\Escritorio\TFG\APP WALKIM\WALKIM\WALKIM\obj\Debug\net8.0\ref\WALKIM.dll
-C:\Users\lmaciabo\OneDrive - NTT DATA EMEAL\Escritorio\TFG\APP WALKIM\WALKIM\WALKIM\bin\Debug\net8.0\Newtonsoft.Json.dll

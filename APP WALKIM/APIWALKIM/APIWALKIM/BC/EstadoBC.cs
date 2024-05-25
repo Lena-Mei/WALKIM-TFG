@@ -1,6 +1,7 @@
 ﻿using APIWALKIM.DAC;
 using APIWALKIM.Models;
 using APIWALKIM.Models.Entities;
+using APIWALKIM.Models.Request;
 using APIWALKIM.Models.Response.EstadoResponse;
 
 
@@ -10,10 +11,10 @@ namespace APIWALKIM.BC
     {
         private readonly EstadoDAC estadoDAC = new EstadoDAC();
 
-        public BaseResponseModel InsertarEstado (Estado estado)
+        public BaseResponseModel InsertarEstado (EstadoRequest estado)
         {
             BaseResponseModel result = new BaseResponseModel ();
-            int resultado = estadoDAC.InsertarEstado (estado);
+            int resultado = estadoDAC.InsertarEstado (estado.estado);
             if (resultado == 1)
             {
                 result.httpStatus = System.Net.HttpStatusCode.OK;
@@ -26,10 +27,10 @@ namespace APIWALKIM.BC
             return result;
         }
 
-        public BaseResponseModel ActEstado(Estado estado)
+        public BaseResponseModel ActEstado(EstadoRequest estado)
         {
             BaseResponseModel result = new BaseResponseModel();
-            int resultado = estadoDAC.ActEstado(estado);
+            int resultado = estadoDAC.ActEstado(estado.estado);
             if (resultado == 1)
             {
                 result.httpStatus = System.Net.HttpStatusCode.OK;
@@ -37,7 +38,7 @@ namespace APIWALKIM.BC
             else if(resultado == -1)
             {
                 result.httpStatus = System.Net.HttpStatusCode.BadRequest;
-                result.message = "Ya existe un Estado "+ estado.nombre;
+                result.message = "Ya existe un Estado "+ estado.estado.nombre;
             }
             else if(resultado == -2)
             {

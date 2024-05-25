@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WALKIM")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+60e57b9cf471df9727835fbcfaba3abc5e809e29")]
 [assembly: System.Reflection.AssemblyProductAttribute("WALKIM")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WALKIM")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

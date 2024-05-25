@@ -1,0 +1,57 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@{
+    ViewData["Title"] = "Subir Archivos";
+    bool sitiene = ViewBag.Sitiene;
+}
+
+<h2>Subir Archivos</h2>
+
+@if(sitiene is true)
+{
+    <p class="alert alert-warning">Ya has subido los archivos necesarios. Ahora debes de esperar a que el administrador los valide</p>
+}
+else
+{
+    <form asp-action="SubirArchivos" asp-controller="Archivo" method="post" enctype="multipart/form-data">
+        <div class="card">
+            <div class="card-header">
+                Subir DNI
+            </div>
+            <div class="card-body">
+                <input type="file" name="archivos" class="form-control" required />
+            </div>
+        </div>
+
+        <div class="card mt-3">
+            <div class="card-header">
+                Subir Seguro Civil
+            </div>
+            <div class="card-body">
+                <input type="file" name="archivos" class="form-control" required />
+            </div>
+        </div>
+
+        <div class="card mt-3">
+            <div class="card-header">
+                Subir Documento de Apto para Cuidar Mascotas
+            </div>
+            <div class="card-body">
+                <input type="file" name="archivos" class="form-control" required />
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary mt-3">Subir Archivos</button>
+    </form>
+
+    @if (!string.IsNullOrEmpty(ViewData["ErrorMessage"] as string))
+    {
+        <div class="alert alert-danger mt-3">
+            @ViewData["ErrorMessage"]
+        </div>
+    }
+}
+

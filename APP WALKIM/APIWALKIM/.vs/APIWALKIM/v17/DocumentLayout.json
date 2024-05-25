@@ -3,28 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\APIWALKIM\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8334F562-B14E-4042-B517-6712A58D38F5}|APIWALKIM\\APIWALKIM.csproj|c:\\users\\lmaciabo\\onedrive - ntt data emeal\\escritorio\\tfg\\app walkim\\apiwalkim\\apiwalkim\\bc\\archviobc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8334F562-B14E-4042-B517-6712A58D38F5}|APIWALKIM\\APIWALKIM.csproj|solutionrelative:apiwalkim\\bc\\archviobc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8334F562-B14E-4042-B517-6712A58D38F5}|APIWALKIM\\APIWALKIM.csproj|c:\\users\\lmaciabo\\onedrive - ntt data emeal\\escritorio\\tfg\\app walkim\\apiwalkim\\apiwalkim\\bc\\estadobc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8334F562-B14E-4042-B517-6712A58D38F5}|APIWALKIM\\APIWALKIM.csproj|solutionrelative:apiwalkim\\bc\\estadobc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8334F562-B14E-4042-B517-6712A58D38F5}|APIWALKIM\\APIWALKIM.csproj|c:\\users\\lmaciabo\\onedrive - ntt data emeal\\escritorio\\tfg\\app walkim\\apiwalkim\\apiwalkim\\controllers\\archivocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8334F562-B14E-4042-B517-6712A58D38F5}|APIWALKIM\\APIWALKIM.csproj|solutionrelative:apiwalkim\\controllers\\archivocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8334F562-B14E-4042-B517-6712A58D38F5}|APIWALKIM\\APIWALKIM.csproj|c:\\users\\lmaciabo\\onedrive - ntt data emeal\\escritorio\\tfg\\app walkim\\apiwalkim\\apiwalkim\\models\\request\\archivorequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8334F562-B14E-4042-B517-6712A58D38F5}|APIWALKIM\\APIWALKIM.csproj|solutionrelative:apiwalkim\\models\\request\\archivorequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8334F562-B14E-4042-B517-6712A58D38F5}|APIWALKIM\\APIWALKIM.csproj|c:\\users\\lmaciabo\\onedrive - ntt data emeal\\escritorio\\tfg\\app walkim\\apiwalkim\\apiwalkim\\controllers\\resenyacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8334F562-B14E-4042-B517-6712A58D38F5}|APIWALKIM\\APIWALKIM.csproj|solutionrelative:apiwalkim\\controllers\\resenyacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8334F562-B14E-4042-B517-6712A58D38F5}|APIWALKIM\\APIWALKIM.csproj|c:\\users\\lmaciabo\\onedrive - ntt data emeal\\escritorio\\tfg\\app walkim\\apiwalkim\\apiwalkim\\bc\\resenyabc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8334F562-B14E-4042-B517-6712A58D38F5}|APIWALKIM\\APIWALKIM.csproj|solutionrelative:apiwalkim\\bc\\resenyabc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8334F562-B14E-4042-B517-6712A58D38F5}|APIWALKIM\\APIWALKIM.csproj|c:\\users\\lmaciabo\\onedrive - ntt data emeal\\escritorio\\tfg\\app walkim\\apiwalkim\\apiwalkim\\models\\request\\resenyarequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8334F562-B14E-4042-B517-6712A58D38F5}|APIWALKIM\\APIWALKIM.csproj|solutionrelative:apiwalkim\\models\\request\\resenyarequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8334F562-B14E-4042-B517-6712A58D38F5}|APIWALKIM\\APIWALKIM.csproj|c:\\users\\lmaciabo\\onedrive - ntt data emeal\\escritorio\\tfg\\app walkim\\apiwalkim\\apiwalkim\\models\\request\\estadorequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8334F562-B14E-4042-B517-6712A58D38F5}|APIWALKIM\\APIWALKIM.csproj|solutionrelative:apiwalkim\\models\\request\\estadorequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -43,78 +27,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ArchvioBC.cs",
-              "DocumentMoniker": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\APIWALKIM\\APIWALKIM\\BC\\ArchvioBC.cs",
-              "RelativeDocumentMoniker": "APIWALKIM\\BC\\ArchvioBC.cs",
-              "ToolTip": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\APIWALKIM\\APIWALKIM\\BC\\ArchvioBC.cs",
-              "RelativeToolTip": "APIWALKIM\\BC\\ArchvioBC.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAABCAAAA",
+              "Title": "EstadoBC.cs",
+              "DocumentMoniker": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\APIWALKIM\\APIWALKIM\\BC\\EstadoBC.cs",
+              "RelativeDocumentMoniker": "APIWALKIM\\BC\\EstadoBC.cs",
+              "ToolTip": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\APIWALKIM\\APIWALKIM\\BC\\EstadoBC.cs",
+              "RelativeToolTip": "APIWALKIM\\BC\\EstadoBC.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACgAAABGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T17:11:09.548Z",
+              "WhenOpened": "2024-05-25T10:07:01.511Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ArchivoController.cs",
-              "DocumentMoniker": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\APIWALKIM\\APIWALKIM\\Controllers\\ArchivoController.cs",
-              "RelativeDocumentMoniker": "APIWALKIM\\Controllers\\ArchivoController.cs",
-              "ToolTip": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\APIWALKIM\\APIWALKIM\\Controllers\\ArchivoController.cs",
-              "RelativeToolTip": "APIWALKIM\\Controllers\\ArchivoController.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAQwBIAAABKAAAA",
+              "Title": "EstadoRequest.cs",
+              "DocumentMoniker": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\APIWALKIM\\APIWALKIM\\Models\\Request\\EstadoRequest.cs",
+              "RelativeDocumentMoniker": "APIWALKIM\\Models\\Request\\EstadoRequest.cs",
+              "ToolTip": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\APIWALKIM\\APIWALKIM\\Models\\Request\\EstadoRequest.cs",
+              "RelativeToolTip": "APIWALKIM\\Models\\Request\\EstadoRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T17:10:45.465Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ArchivoRequest.cs",
-              "DocumentMoniker": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\APIWALKIM\\APIWALKIM\\Models\\Request\\ArchivoRequest.cs",
-              "RelativeDocumentMoniker": "APIWALKIM\\Models\\Request\\ArchivoRequest.cs",
-              "ToolTip": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\APIWALKIM\\APIWALKIM\\Models\\Request\\ArchivoRequest.cs",
-              "RelativeToolTip": "APIWALKIM\\Models\\Request\\ArchivoRequest.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T17:10:22.458Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ResenyaBC.cs",
-              "DocumentMoniker": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\APIWALKIM\\APIWALKIM\\BC\\ResenyaBC.cs",
-              "RelativeDocumentMoniker": "APIWALKIM\\BC\\ResenyaBC.cs",
-              "ToolTip": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\APIWALKIM\\APIWALKIM\\BC\\ResenyaBC.cs",
-              "RelativeToolTip": "APIWALKIM\\BC\\ResenyaBC.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAABGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T14:34:13.149Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ResenyaController.cs",
-              "DocumentMoniker": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\APIWALKIM\\APIWALKIM\\Controllers\\ResenyaController.cs",
-              "RelativeDocumentMoniker": "APIWALKIM\\Controllers\\ResenyaController.cs",
-              "ToolTip": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\APIWALKIM\\APIWALKIM\\Controllers\\ResenyaController.cs",
-              "RelativeToolTip": "APIWALKIM\\Controllers\\ResenyaController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAABHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T14:34:11.346Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ResenyaRequest.cs",
-              "DocumentMoniker": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\APIWALKIM\\APIWALKIM\\Models\\Request\\ResenyaRequest.cs",
-              "RelativeDocumentMoniker": "APIWALKIM\\Models\\Request\\ResenyaRequest.cs",
-              "ToolTip": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\APIWALKIM\\APIWALKIM\\Models\\Request\\ResenyaRequest.cs",
-              "RelativeToolTip": "APIWALKIM\\Models\\Request\\ResenyaRequest.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T14:33:06.027Z"
+              "WhenOpened": "2024-05-25T10:02:28.591Z"
             }
           ]
         }

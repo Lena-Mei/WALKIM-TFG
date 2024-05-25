@@ -1,6 +1,7 @@
 ﻿using APIWALKIM.DAC;
 using APIWALKIM.Models;
 using APIWALKIM.Models.Entities;
+using APIWALKIM.Models.Request;
 using APIWALKIM.Models.Response.TipoAnimalResponse;
 using Microsoft.Data.SqlClient;
 
@@ -10,10 +11,10 @@ namespace APIWALKIM.BC
     {
          private readonly TipoAnimalDAC tipoAnimalDAC = new TipoAnimalDAC();
 
-        public BaseResponseModel InsertarTipoAnimal(TipoAnimal tipoServ)
+        public BaseResponseModel InsertarTipoAnimal(TipoAnimalRequest tipoServ)
         {
             BaseResponseModel result = new BaseResponseModel();
-            int resultado = tipoAnimalDAC.InsertarTipoAnimal(tipoServ);
+            int resultado = tipoAnimalDAC.InsertarTipoAnimal(tipoServ.tipoAnimal);
 
             if (resultado==1)
             {
@@ -36,10 +37,10 @@ namespace APIWALKIM.BC
 
         }
 
-        public BaseResponseModel ActTipoAnimal(TipoAnimal tipoServ)
+        public BaseResponseModel ActTipoAnimal(TipoAnimalRequest tipoServ)
         {
             BaseResponseModel result = new BaseResponseModel();
-            int resultado = tipoAnimalDAC.ActTipoAnimal(tipoServ);
+            int resultado = tipoAnimalDAC.ActTipoAnimal(tipoServ.tipoAnimal);
 
             if (resultado==1)
             {

@@ -42,17 +42,18 @@
         {
             if (estado == 6 || estado == 5)
             {
-                <a class="nav-item btn btn-success" style="margin-right:10px;" asp-controller="Archivo" asp-action="SubirArchivo">Subir archivos</a>
-            }
+@*                 <a class="nav-item btn btn-success" style="margin-right:10px;" asp-controller="Archivo" asp-action="Index">Subir archivos</a>
+ *@            }
             else
             {
-                <a class="nav-item btn btn-success" style="margin-right:10px;" asp-controller="Servicio" asp-action="CrearServicio">+</a>
             }
-
-            <li class="nav-item user-info">
+                <a class="nav-item btn btn-success" style="margin-right:10px;" asp-controller="Servicio" asp-action="CrearServicio">+</a>
+@*              <a class="nav-item btn btn-success" style="margin-right:10px;" asp-controller="Archivo" asp-action="Index">Subir archivos</a>
+ *@             <li class="nav-item user-info">
                 <img src="~/IMG/@img" width="60px" style="border-radius:50%;" />
                 <a class="nav-link text-dark" asp-area="" asp-controller="Servidor" asp-action="MisDatos">@name</a>
             </li>
+          
         }
         <li class="nav-item">
             <a class="nav-link text-dark" asp-area="" asp-controller="Login" asp-action="Salir">Cerrar Sesión</a>

@@ -2,6 +2,8 @@
 using APIWALKIM.Helpers.Interface;
 using APIWALKIM.Models;
 using APIWALKIM.Models.Entities;
+using APIWALKIM.Models.Request;
+
 using Microsoft.AspNetCore.Mvc;
 
 
@@ -16,7 +18,7 @@ namespace APIWALKIM.Controllers
 
         [HttpPost]
         [Route("insertarEstado")]
-        public ActionResult<BaseResponseModel> InsertarEstado (Estado estado)
+        public ActionResult<BaseResponseModel> InsertarEstado (EstadoRequest estado)
         {
             BaseResponseModel result = estadoBC.InsertarEstado(estado);
             return _httpHandleResponse.HandleResponse(result);
@@ -24,7 +26,7 @@ namespace APIWALKIM.Controllers
 
         [HttpPut]
         [Route("actEstado")]
-        public ActionResult<BaseResponseModel> ActEstado(Estado estado)
+        public ActionResult<BaseResponseModel> ActEstado(EstadoRequest estado)
         {
             BaseResponseModel result = estadoBC.ActEstado(estado);
             return _httpHandleResponse.HandleResponse(result);

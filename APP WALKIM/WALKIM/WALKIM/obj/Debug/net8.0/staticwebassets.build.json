@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "OSv0xRK8zfP3UqVrQkD4DaiAxDEYlmZFEHLPefKsD20=",
+  "Hash": "x2TU/XsTxpCApPvoCkO7fxL36Tv8o2degEbIezmfj2c=",
   "Source": "WALKIM",
   "BasePath": "_content/WALKIM",
   "Mode": "Default",
@@ -1309,12 +1309,12 @@
       "OriginalItemSpec": "wwwroot\\Iconos\\Ejercicio2.html"
     },
     {
-      "Identity": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\Iconos\\Gato con ayuda.png",
+      "Identity": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\Iconos\\Gato dependiente.png",
       "SourceId": "WALKIM",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\",
       "BasePath": "_content/WALKIM",
-      "RelativePath": "Iconos/Gato con ayuda.png",
+      "RelativePath": "Iconos/Gato dependiente.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1325,7 +1325,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Iconos\\Gato con ayuda.png"
+      "OriginalItemSpec": "wwwroot\\Iconos\\Gato dependiente.png"
     },
     {
       "Identity": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\Iconos\\Gato.png",
@@ -1442,12 +1442,12 @@
       "OriginalItemSpec": "wwwroot\\Iconos\\logo.png"
     },
     {
-      "Identity": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\Iconos\\Perro con ayuda.png",
+      "Identity": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\Iconos\\Perro dependiente.png",
       "SourceId": "WALKIM",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\",
       "BasePath": "_content/WALKIM",
-      "RelativePath": "Iconos/Perro con ayuda.png",
+      "RelativePath": "Iconos/Perro dependiente.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1458,7 +1458,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Iconos\\Perro con ayuda.png"
+      "OriginalItemSpec": "wwwroot\\Iconos\\Perro dependiente.png"
     },
     {
       "Identity": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\Iconos\\Perro.png",
@@ -1613,6 +1613,44 @@
       "OriginalItemSpec": "wwwroot\\Iconos\\usuario.svg"
     },
     {
+      "Identity": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\IMG\\14.png",
+      "SourceId": "WALKIM",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\",
+      "BasePath": "_content/WALKIM",
+      "RelativePath": "IMG/14.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\IMG\\14.png"
+    },
+    {
+      "Identity": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\IMG\\18.jpg",
+      "SourceId": "WALKIM",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\",
+      "BasePath": "_content/WALKIM",
+      "RelativePath": "IMG/18.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\IMG\\18.jpg"
+    },
+    {
       "Identity": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\IMG\\2.jpg",
       "SourceId": "WALKIM",
       "SourceType": "Discovered",
@@ -1651,6 +1689,44 @@
       "OriginalItemSpec": "wwwroot\\IMG\\5.jpg"
     },
     {
+      "Identity": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\IMG\\negro.jpg",
+      "SourceId": "WALKIM",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\",
+      "BasePath": "_content/WALKIM",
+      "RelativePath": "IMG/negro.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\IMG\\negro.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\IMG\\PERRY.png",
+      "SourceId": "WALKIM",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\",
+      "BasePath": "_content/WALKIM",
+      "RelativePath": "IMG/PERRY.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\IMG\\PERRY.png"
+    },
+    {
       "Identity": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\IMG\\queFuncioneporfavor.jpg",
       "SourceId": "WALKIM",
       "SourceType": "Discovered",
@@ -1687,6 +1763,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\IMG\\sinFoto.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\IMG\\tana.jpg",
+      "SourceId": "WALKIM",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\",
+      "BasePath": "_content/WALKIM",
+      "RelativePath": "IMG/tana.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\IMG\\tana.jpg"
     },
     {
       "Identity": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\js\\site.js",

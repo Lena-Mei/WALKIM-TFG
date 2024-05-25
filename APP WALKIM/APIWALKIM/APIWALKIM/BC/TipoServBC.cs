@@ -1,6 +1,8 @@
 ﻿using APIWALKIM.DAC;
 using APIWALKIM.Models;
 using APIWALKIM.Models.Entities;
+using APIWALKIM.Models.Request;
+
 using APIWALKIM.Models.Response.TipoServResponse;
 
 namespace APIWALKIM.BC
@@ -9,10 +11,10 @@ namespace APIWALKIM.BC
     {
         private readonly TipoServDAC tipoServDAC = new TipoServDAC();
 
-        public BaseResponseModel InsertarTipoServ (TipoServicio tipoServ)
+        public BaseResponseModel InsertarTipoServ (TipoServicioRequest tipoServ)
         {
             BaseResponseModel result = new BaseResponseModel ();
-            int resultado = tipoServDAC.InsertarTipoServ(tipoServ);
+            int resultado = tipoServDAC.InsertarTipoServ(tipoServ.tipoServicio);
 
             if (resultado==1)
             {
@@ -27,7 +29,7 @@ namespace APIWALKIM.BC
             else
             {
                 result.httpStatus = System.Net.HttpStatusCode.NotFound;
-                result.message = "Ya existe TipoServicio con el nombre '"+ tipoServ.nombre+"' registrado";
+                result.message = "Ya existe TipoServicio con el nombre '"+ tipoServ.tipoServicio.nombre+"' registrado";
             }
             return result;
 
@@ -35,10 +37,10 @@ namespace APIWALKIM.BC
 
         }
 
-        public BaseResponseModel ActTipoServ(TipoServicio tipoServ)
+        public BaseResponseModel ActTipoServ(TipoServicioRequest tipoServ)
         {
             BaseResponseModel result = new BaseResponseModel();
-            int resultado = tipoServDAC.ActTipoServ(tipoServ);
+            int resultado = tipoServDAC.ActTipoServ(tipoServ.tipoServicio);
 
             if (resultado==1)
             {

@@ -1,4 +1,5 @@
 ﻿@{
+    var idServicio = ViewBag.Servicio;
 }
 @model WALKIM.Models.Resenya
 
@@ -6,7 +7,7 @@
     <div class="col-md-4">
         <h2 class="text-center">Publicar Reseña</h2>
         <hr />
-        <form asp-action="PublicarResenya">
+        <form asp-action="PublicarResenya" method="post">
             <div class="form-group">
                 <label asp-for="puntaje" class="control-label fw-bold">Puntaje:</label>
                 <div class="star-rating">
@@ -19,8 +20,7 @@
                 <input type="hidden" asp-for="puntaje" id="puntaje" />
                 <span asp-validation-for="puntaje" class="text-danger"></span>
             </div>
-            <input type="hidden" asp-for="idServicio" id="puntaje" value="@ViewBag.Servicio."/>
-
+            <input type="hidden" asp-for="idServicio" name="idServicio" value="@idServicio" />
             <div class="form-group">
                 <label asp-for="comentario" class="control-label fw-bold">Descripción:</label>
                 <textarea asp-for="comentario" class="form-control" rows="4"></textarea>

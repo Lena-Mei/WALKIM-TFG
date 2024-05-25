@@ -1,0 +1,98 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\ADMINWALKIM\\AdminWALKIM\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C2FED491-F8D2-4E91-A997-B23416167E09}|AdminWALKIM\\AdminWALKIM.csproj|c:\\users\\lmaciabo\\onedrive - ntt data emeal\\escritorio\\tfg\\app walkim\\adminwalkim\\adminwalkim\\adminwalkim\\controllers\\estadocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2FED491-F8D2-4E91-A997-B23416167E09}|AdminWALKIM\\AdminWALKIM.csproj|solutionrelative:adminwalkim\\controllers\\estadocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2FED491-F8D2-4E91-A997-B23416167E09}|AdminWALKIM\\AdminWALKIM.csproj|c:\\users\\lmaciabo\\onedrive - ntt data emeal\\escritorio\\tfg\\app walkim\\adminwalkim\\adminwalkim\\adminwalkim\\views\\estado\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C2FED491-F8D2-4E91-A997-B23416167E09}|AdminWALKIM\\AdminWALKIM.csproj|solutionrelative:adminwalkim\\views\\estado\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2FED491-F8D2-4E91-A997-B23416167E09}|AdminWALKIM\\AdminWALKIM.csproj|c:\\users\\lmaciabo\\onedrive - ntt data emeal\\escritorio\\tfg\\app walkim\\adminwalkim\\adminwalkim\\adminwalkim\\views\\estado\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C2FED491-F8D2-4E91-A997-B23416167E09}|AdminWALKIM\\AdminWALKIM.csproj|solutionrelative:adminwalkim\\views\\estado\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2FED491-F8D2-4E91-A997-B23416167E09}|AdminWALKIM\\AdminWALKIM.csproj|c:\\users\\lmaciabo\\onedrive - ntt data emeal\\escritorio\\tfg\\app walkim\\adminwalkim\\adminwalkim\\adminwalkim\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2FED491-F8D2-4E91-A997-B23416167E09}|AdminWALKIM\\AdminWALKIM.csproj|solutionrelative:adminwalkim\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 2024,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\ADMINWALKIM\\AdminWALKIM\\AdminWALKIM\\Views\\Estado\\Index.cshtml",
+              "RelativeDocumentMoniker": "AdminWALKIM\\Views\\Estado\\Index.cshtml",
+              "ToolTip": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\ADMINWALKIM\\AdminWALKIM\\AdminWALKIM\\Views\\Estado\\Index.cshtml",
+              "RelativeToolTip": "AdminWALKIM\\Views\\Estado\\Index.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABUAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-25T09:56:57.204Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EstadoController.cs",
+              "DocumentMoniker": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\ADMINWALKIM\\AdminWALKIM\\AdminWALKIM\\Controllers\\EstadoController.cs",
+              "RelativeDocumentMoniker": "AdminWALKIM\\Controllers\\EstadoController.cs",
+              "ToolTip": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\ADMINWALKIM\\AdminWALKIM\\AdminWALKIM\\Controllers\\EstadoController.cs",
+              "RelativeToolTip": "AdminWALKIM\\Controllers\\EstadoController.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAQwFUAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-25T09:55:16.632Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Editar.cshtml",
+              "DocumentMoniker": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\ADMINWALKIM\\AdminWALKIM\\AdminWALKIM\\Views\\Estado\\Editar.cshtml",
+              "RelativeDocumentMoniker": "AdminWALKIM\\Views\\Estado\\Editar.cshtml",
+              "ToolTip": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\ADMINWALKIM\\AdminWALKIM\\AdminWALKIM\\Views\\Estado\\Editar.cshtml",
+              "RelativeToolTip": "AdminWALKIM\\Views\\Estado\\Editar.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABgAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-25T10:11:34.801Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 66,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\ADMINWALKIM\\AdminWALKIM\\AdminWALKIM\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "AdminWALKIM\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\ADMINWALKIM\\AdminWALKIM\\AdminWALKIM\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "AdminWALKIM\\Controllers\\AdminController.cs",
+              "ViewState": "AQIAALUAAAAAAAAAAADwv8oAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-25T10:16:24.494Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

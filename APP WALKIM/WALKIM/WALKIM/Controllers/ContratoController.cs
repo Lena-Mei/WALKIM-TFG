@@ -23,13 +23,13 @@ namespace WALKIM.Controllers
         }
 
         [HttpGet]
-        public IActionResult CrearContrato(int idServicio)
+        public async Task<IActionResult> CrearContrato(int idServicio)
         {
 
             ViewBag.IDSer = idServicio;
             
-            var mascotasUsuario = MascotasUsuario(IDUSER());
-            var servicio = GetServicio(idServicio);
+            var mascotasUsuario = await MascotasUsuario(IDUSER());
+            var servicio = await  GetServicio(idServicio);
 
             ViewBag.Servicio = servicio;
             ViewBag.Mascotas = mascotasUsuario;
@@ -38,7 +38,7 @@ namespace WALKIM.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult CrearContrato(Contrata contrato, int[] mascotaSeleccionado)
+        public async Task<IActionResult> CrearContrato(Contrata contrato, int[] mascotaSeleccionado)
         {
             contrato.idUsuario = IDUSER();
             contrato.listaMascotas = mascotaSeleccionado.Select(id => new MascotaContrato
@@ -47,7 +47,7 @@ namespace WALKIM.Controllers
                 idMascota = id
             }).ToList();
 
-            if (AnyadirContrato(contrato))
+            if (await AnyadirContrato(contrato))
             {
                 return RedirectToAction("MisContratos", "Usuario");
             }
@@ -58,26 +58,26 @@ namespace WALKIM.Controllers
         }
 
 
-        public IActionResult DetalleContrato(int idContrato) 
+        public async Task<IActionResult> DetalleContrato(int idContrato) 
         {
           
 
-            var contrato = GetContrato(idContrato);
-            var servicio = GetServicio(contrato.idServicio);
+            var contrato = await GetContrato(idContrato);
+            var servicio = await GetServicio(contrato.idServicio);
             ViewBag.Servicio = servicio;
-            var usuarios = GetUsuario(contrato.idUsuario);
+            var usuarios = await GetUsuario(contrato.idUsuario);
             ViewBag.Usuarios = usuarios;
-            var animales = GetAllTipoAnimal();
+            var animales = await GetAllTipoAnimal();
             ViewBag.Animales = animales;
 
-            var estados = ListadoEstados();
+            var estados = await ListadoEstados();
             ViewBag.Estados = estados;
             return View(contrato);
         }
 
-        public IActionResult ActEstado (int idEstado, int idContrato)
+        public async Task<IActionResult> ActEstado (int idEstado, int idContrato)
         {
-            if(ActualizarEstado(idEstado, idContrato))
+            if(await ActualizarEstado(idEstado, idContrato))
             {
                 return RedirectToAction("DetalleContrato", "Contrato", new {idContrato= idContrato});
             }
@@ -89,7 +89,7 @@ namespace WALKIM.Controllers
 
 
 
-        private bool ActualizarEstado(int idEstado, int idContrato)
+        private async Task<bool> ActualizarEstado(int idEstado, int idContrato)
         {
             bool correcto = false;
             try
@@ -101,7 +101,7 @@ namespace WALKIM.Controllers
                 httpRequest.ContentType = "application/json";
                 httpRequest.Accept = "application/json";
 
-                var httpResponse = (HttpWebResponse)httpRequest.GetResponse();
+                var httpResponse = (HttpWebResponse) await httpRequest.GetResponseAsync();
                 HttpStatusCode httpStatus = httpResponse.StatusCode;
 
                 if (httpStatus == HttpStatusCode.OK)
@@ -117,7 +117,7 @@ namespace WALKIM.Controllers
         }
 
 
-        private List<Mascota> MascotasUsuario(int id)
+        private async Task< List<Mascota>> MascotasUsuario(int id)
         {
 
             List<Mascota> mascotas = new List<Mascota>();
@@ -127,11 +127,11 @@ namespace WALKIM.Controllers
                 var httpRequest = (HttpWebRequest)WebRequest.Create(url);
                 httpRequest.Method = "GET";
 
-                var httpResponse = (HttpWebResponse)httpRequest.GetResponse();
+                var httpResponse = (HttpWebResponse) await httpRequest.GetResponseAsync();
 
                 using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
                 {
-                    var resultado = streamReader.ReadToEnd();
+                    var resultado = await streamReader.ReadToEndAsync();
                     var json = JObject.Parse(resultado);
                     var contratosArray = json["listaMascota"].ToObject<JArray>();
                     mascotas = contratosArray.ToObject<List<Mascota>>();
@@ -145,7 +145,7 @@ namespace WALKIM.Controllers
             return mascotas;
         }
 
-        private Servicio GetServicio(int id)
+        private async Task<Servicio> GetServicio(int id)
         {
             Servicio servicio = new Servicio();
             string url = generalUrl + "Servicio/getServicio?idServicio=" + id;
@@ -154,11 +154,11 @@ namespace WALKIM.Controllers
                 var httpRequest = (HttpWebRequest)WebRequest.Create(url);
                 httpRequest.Method = "GET";
 
-                var httpResponse = (HttpWebResponse)httpRequest.GetResponse();
+                var httpResponse = (HttpWebResponse)await httpRequest.GetResponseAsync();
 
                 using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
                 {
-                    var resultado = streamReader.ReadToEnd();
+                    var resultado = await streamReader.ReadToEndAsync();
                     var json = JObject.Parse(resultado);
                     servicio = json["servicio"].ToObject<Servicio>();
                 }
@@ -170,7 +170,7 @@ namespace WALKIM.Controllers
             }
             return servicio;
         }
-        private Contrata GetContrato(int id)
+        private async Task<Contrata> GetContrato(int id)
         {
             Contrata contrato = new Contrata();
             string url = generalUrl + "Contrata/getContrato?idContrato=" + id;
@@ -179,11 +179,11 @@ namespace WALKIM.Controllers
                 var httpRequest = (HttpWebRequest)WebRequest.Create(url);
                 httpRequest.Method = "GET";
 
-                var httpResponse = (HttpWebResponse)httpRequest.GetResponse();
+                var httpResponse = (HttpWebResponse)await httpRequest.GetResponseAsync();
 
                 using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
                 {
-                    var resultado = streamReader.ReadToEnd();
+                    var resultado = await streamReader.ReadToEndAsync();
                     var json = JObject.Parse(resultado);
                     contrato = json["contrata"].ToObject<Contrata>();
                 }
@@ -196,7 +196,7 @@ namespace WALKIM.Controllers
             return contrato;
         }
 
-        private Usuario GetUsuario(int id)
+        private async Task<Usuario> GetUsuario(int id)
         {
             Usuario servicio = new Usuario();
             string url = generalUrl + "Usuario/getUsuario?idUsuario=" + id;
@@ -205,11 +205,11 @@ namespace WALKIM.Controllers
                 var httpRequest = (HttpWebRequest)WebRequest.Create(url);
                 httpRequest.Method = "GET";
 
-                var httpResponse = (HttpWebResponse)httpRequest.GetResponse();
+                var httpResponse = (HttpWebResponse)await httpRequest.GetResponseAsync();
 
                 using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
                 {
-                    var resultado = streamReader.ReadToEnd();
+                    var resultado = await streamReader.ReadToEndAsync();
                     var json = JObject.Parse(resultado);
                     servicio = json["usuario"].ToObject<Usuario>();
                 }
@@ -222,7 +222,7 @@ namespace WALKIM.Controllers
             return servicio;
         }
 
-        private bool AnyadirContrato(Contrata contrata)
+        private async Task< bool> AnyadirContrato(Contrata contrata)
         {
             bool correcto = false;
             var servicioData = new { contrato = contrata };
@@ -235,13 +235,13 @@ namespace WALKIM.Controllers
                 httpRequest.ContentType = "application/json";
                 httpRequest.Accept = "application/json";
 
-                using (var streamWriter = new StreamWriter(httpRequest.GetRequestStream()))
+                using (var streamWriter = new StreamWriter(await httpRequest.GetRequestStreamAsync()))
                 {
 
                     streamWriter.Write(jsonDatos);
                 }
 
-                var httpResponse = (HttpWebResponse)httpRequest.GetResponse();
+                var httpResponse = (HttpWebResponse)await httpRequest.GetResponseAsync();
                 HttpStatusCode httpStatus = httpResponse.StatusCode;
 
                 if (httpStatus == HttpStatusCode.OK)
@@ -252,7 +252,7 @@ namespace WALKIM.Controllers
                 {
                     using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
                     {
-                        string errorMensaje = streamReader.ReadToEnd();
+                        string errorMensaje = await streamReader.ReadToEndAsync();
                         Console.WriteLine(errorMensaje);
                     }
                 }
@@ -264,7 +264,7 @@ namespace WALKIM.Controllers
             return correcto;
         }
 
-        private List<Estado> ListadoEstados()
+        private async Task< List<Estado>> ListadoEstados()
         {
             List<Estado> estados = new List<Estado>();
             try
@@ -273,11 +273,11 @@ namespace WALKIM.Controllers
                 var httpRequest = (HttpWebRequest)WebRequest.Create(url);
                 httpRequest.Method = "GET";
 
-                var httpResponse = (HttpWebResponse)httpRequest.GetResponse();
+                var httpResponse = (HttpWebResponse)await httpRequest.GetResponseAsync();
 
                 using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
                 {
-                    var resultado = streamReader.ReadToEnd();
+                    var resultado = await streamReader.ReadToEndAsync();
                     var json = JObject.Parse(resultado);
                     var estadoArray = json["estadoLista"].ToObject<JArray>();
                     estados = estadoArray.ToObject<List<Estado>>();
@@ -291,7 +291,7 @@ namespace WALKIM.Controllers
             return estados;
         }
 
-        private List<TipoAnimal> GetAllTipoAnimal()
+        private async Task<List<TipoAnimal>> GetAllTipoAnimal()
         {
             List<TipoAnimal> animales = new List<TipoAnimal>();
             try
@@ -300,11 +300,11 @@ namespace WALKIM.Controllers
                 var httpRequest = (HttpWebRequest)WebRequest.Create(url);
                 httpRequest.Method = "GET";
 
-                var httpResponse = (HttpWebResponse)httpRequest.GetResponse();
+                var httpResponse = (HttpWebResponse)await httpRequest.GetResponseAsync();
 
                 using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
                 {
-                    var resultado = streamReader.ReadToEnd();
+                    var resultado = await streamReader.ReadToEndAsync();
                     var json = JObject.Parse(resultado);
                     var animalArray = json["listaAnimal"].ToObject<JArray>();
                     animales = animalArray.ToObject<List<TipoAnimal>>();

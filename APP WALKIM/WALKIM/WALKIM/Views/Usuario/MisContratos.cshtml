@@ -6,7 +6,6 @@
     var servicios = ViewBag.Servicios as List<WALKIM.Models.Servicio>;
     var servidores = ViewBag.Servidores as List<WALKIM.Models.Servidor>;
     var estados = ViewBag.Estados as List<WALKIM.Models.Estado>;
-
 }
 
 @model List<WALKIM.Models.Contrata>
@@ -38,47 +37,30 @@ else
                 <tbody>
                     @foreach (var contrato in Model)
                     {
-                        <tr>
-                            @foreach (var servicio in servicios)
-                            {
-                                if (servicio.idServicio == contrato.idServicio)
-                                {
-                                    @foreach (var servidor in servidores)
-                                    {
-                                        if (servidor.idServidor == servicio.idServidor)
-                                        {
-                                            <td>
-                                                <a href="@Url.Action("Detalle", "Servidor", new{id=servidor.idServidor})">@servidor.correo</a>
-                                            </td>
-                                        }
-                                    }
-                                    <td>
-                                        @servicio.nombre
-                                    </td>
-                                    @foreach (var tipo in tipos)
-                                    {
-                                        if (servicio.idTipoServicio == tipo.idTipoServicio)
-                                        {
-                                            <td>
-                                                @tipo.nombre
-                                            </td>
-                                        }
-                                    }
-                                }
-                                <td>@contrato.fecha</td>
-                                <td>@contrato.tiempo</td>
-                                <td>
-                                    @foreach(var estado in estados)
-                                    {
-                                        if(contrato.idEstado == estado.idEstado)
-                                        {
-                                            @estado.nombre;
-                                        }
-                                    }
-                                </td>
-                            }
+                        var servicio = servicios.FirstOrDefault(s => s.idServicio == contrato.idServicio);
+                        var servidor = servidores.FirstOrDefault(s => s.idServidor == servicio?.idServidor);
+                        var tipo = tipos.FirstOrDefault(t => t.idTipoServicio == servicio?.idTipoServicio);
+                        var estado = estados.FirstOrDefault(e => e.idEstado == contrato.idEstado);
 
-                            <td><a href="@Url.Action("DetalleContrato", "Contrato", new {idContrato= contrato.idContrato})" class="btn btn-warning">Ver Detalles</a></td>
+                        <tr>
+                            <td>
+                                @if (servidor != null)
+                                {
+                                    <a href="@Url.Action("Detalle", "Servidor", new { id = servidor.idServidor })">@servidor.correo</a>
+                                }
+                            </td>
+                            <td>
+                                @servicio.nombre
+                            </td>
+                            <td>
+                                @tipo.nombre
+                            </td>
+                            <td>@contrato.fecha.ToString("dd/MM/yyyy")</td>
+                            <td>@contrato.tiempo</td>
+                            <td>
+                                @estado.nombre
+                            </td>
+                            <td><a href="@Url.Action("DetalleContrato", "Contrato", new { idContrato = contrato.idContrato })" class="btn btn-warning">Ver Detalles</a></td>
                         </tr>
                     }
                 </tbody>

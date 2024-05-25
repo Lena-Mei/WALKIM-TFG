@@ -1,0 +1,20 @@
+﻿@using System.Security.Claims;
+@using Microsoft.AspNetCore.Identity;
+@{
+    int idUsuario = 0;
+    ViewData["Title"] = "Home Page";
+    int.TryParse(User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier)?.Value, out idUsuario);
+
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    @if(idUsuario == null)
+    {
+        <p>NO HAY USUARIO</p>
+    }
+    else{
+        <p>@idUsuario</p>
+    }
+</div>

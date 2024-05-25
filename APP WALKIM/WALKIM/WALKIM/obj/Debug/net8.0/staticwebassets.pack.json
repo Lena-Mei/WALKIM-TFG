@@ -5,12 +5,28 @@
       "PackagePath": "staticwebassets\\WALKIM.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\IMG\\14.png",
+      "PackagePath": "staticwebassets\\IMG\\14.png"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\IMG\\18.jpg",
+      "PackagePath": "staticwebassets\\IMG\\18.jpg"
+    },
+    {
       "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\IMG\\2.jpg",
       "PackagePath": "staticwebassets\\IMG\\2.jpg"
     },
     {
       "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\IMG\\5.jpg",
       "PackagePath": "staticwebassets\\IMG\\5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\IMG\\PERRY.png",
+      "PackagePath": "staticwebassets\\IMG\\PERRY.png"
+    },
+    {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\IMG\\negro.jpg",
+      "PackagePath": "staticwebassets\\IMG\\negro.jpg"
     },
     {
       "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\IMG\\queFuncioneporfavor.jpg",
@@ -21,6 +37,10 @@
       "PackagePath": "staticwebassets\\IMG\\sinFoto.jpg"
     },
     {
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\IMG\\tana.jpg",
+      "PackagePath": "staticwebassets\\IMG\\tana.jpg"
+    },
+    {
       "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\Iconos\\Conejo.png",
       "PackagePath": "staticwebassets\\Iconos\\Conejo.png"
     },
@@ -29,8 +49,8 @@
       "PackagePath": "staticwebassets\\Iconos\\Ejercicio2.html"
     },
     {
-      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\Iconos\\Gato con ayuda.png",
-      "PackagePath": "staticwebassets\\Iconos\\Gato con ayuda.png"
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\Iconos\\Gato dependiente.png",
+      "PackagePath": "staticwebassets\\Iconos\\Gato dependiente.png"
     },
     {
       "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\Iconos\\Gato.png",
@@ -49,8 +69,8 @@
       "PackagePath": "staticwebassets\\Iconos\\PERRY.png"
     },
     {
-      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\Iconos\\Perro con ayuda.png",
-      "PackagePath": "staticwebassets\\Iconos\\Perro con ayuda.png"
+      "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\Iconos\\Perro dependiente.png",
+      "PackagePath": "staticwebassets\\Iconos\\Perro dependiente.png"
     },
     {
       "Id": "C:\\Users\\lmaciabo\\OneDrive - NTT DATA EMEAL\\Escritorio\\TFG\\APP WALKIM\\WALKIM\\WALKIM\\wwwroot\\Iconos\\Perro.png",

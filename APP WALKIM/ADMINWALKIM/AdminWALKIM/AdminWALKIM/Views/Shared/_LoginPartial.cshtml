@@ -1,0 +1,11 @@
+﻿@using System.Security.Claims;
+@using Microsoft.AspNetCore.Identity;
+
+<ul class="navbar-nav">
+    @if (User.Identity!.IsAuthenticated)
+    {
+        <li class="nav-item">
+            <a class="nav-link text-light" asp-area="" asp-controller="Login" asp-action="Salir">Cerrar Sesión</a>
+        </li>
+    }
+</ul>

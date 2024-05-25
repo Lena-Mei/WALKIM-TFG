@@ -134,3 +134,4 @@ C:\Users\lmaciabo\OneDrive - NTT DATA EMEAL\Escritorio\TFG\APP WALKIM\APIWALKIM\
 C:\Users\lmaciabo\OneDrive - NTT DATA EMEAL\Escritorio\TFG\APP WALKIM\APIWALKIM\APIWALKIM\obj\Debug\net8.0\APIWALKIM.pdb
 C:\Users\lmaciabo\OneDrive - NTT DATA EMEAL\Escritorio\TFG\APP WALKIM\APIWALKIM\APIWALKIM\obj\Debug\net8.0\APIWALKIM.genruntimeconfig.cache
 C:\Users\lmaciabo\OneDrive - NTT DATA EMEAL\Escritorio\TFG\APP WALKIM\APIWALKIM\APIWALKIM\obj\Debug\net8.0\ref\APIWALKIM.dll
+C:\Users\lmaciabo\OneDrive - NTT DATA EMEAL\Escritorio\TFG\APP WALKIM\APIWALKIM\APIWALKIM\obj\Debug\net8.0\APIWALKIM.sourcelink.json

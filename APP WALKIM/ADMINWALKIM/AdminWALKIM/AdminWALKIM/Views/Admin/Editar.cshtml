@@ -1,0 +1,97 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model AdminWALKIM.Models.Administrador
+<div class="row">
+    <div class="col-12">
+        <h1>Editar Datos Administrador</h1>
+        <hr />
+    </div>
+
+    <form asp-action="Editar">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="col-12">
+            <div class="row">
+                <div class="col-4">
+                    <div class="form-group">
+                        <label asp-for="nombre" class="control-label fw-bold">Nombre:</label>
+                        <input asp-for="nombre" class="form-control" />
+                        <span asp-validation-for="nombre" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="row">
+                        <div class="form-group">
+                            <label asp-for="apellido1" class="control-label fw-bold">Apellidos:</label>
+                            <div class="row">
+                                <div class="col-6">
+                                    <input asp-for="apellido1" class="form-control" />
+                                    <span asp-validation-for="apellido1" class="text-danger"></span>
+                                </div>
+                                <div class="col-6">
+                                    <input asp-for="apellido2" class="form-control" />
+                                    <span asp-validation-for="apellido2" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label asp-for="telefono" class="control-label fw-bold">Teléfono:</label>
+                                <input asp-for="telefono" class="form-control" maxlength="9" />
+                                <span asp-validation-for="telefono" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label asp-for="correo" class="control-label fw-bold">Corrreo:</label>
+                                <input asp-for="correo" class="form-control" disabled />
+                                <input type="hidden" asp-for="correo" />
+                                <span asp-validation-for="nombre" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4" style="margin-top:10px;">
+                <div class="form-group">
+                    <a href="@Url.Action("Index", "Admin")" class="btn btn-secondary">Volver al listado</a>
+
+                </div>
+            </div>
+            <div class="col-4" style="margin-top:10px;">
+                <div class="form-group">
+                    <input type="submit" value="Actualizar datos" class="btn btn-warning" />
+                </div>
+            </div>
+            <div class="col-4" style="margin-top:10px;">
+                <div class="form-group">
+                    <a href="@Url.Action("EliminarAdmin", "Admin", new{idAdmin=Model.idAdministrador})"  class="btn btn-danger">Eliminar administrador</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12">
+            @if (ViewData["error"] != null)
+            {
+                <p class="alert alert-danger" style="margin-top:10px;">@ViewData["error"]</p>
+            }
+            @if (ViewData["correcto"] is true)
+            {
+                <p class="alert alert-success" style="margin-top:10px;">Se han guardado correctamente los datos</p>
+            }
+        </div>
+        <div class="form-group" hidden>
+            <input asp-for="contrasenya" class="form-control" />
+        </div>
+        <div class="form-group" hidden>
+            <input asp-for="idAdministrador" class="form-control"  />
+        </div>
+    </form>
+</div>

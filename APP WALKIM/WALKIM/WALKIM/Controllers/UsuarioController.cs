@@ -74,15 +74,15 @@ namespace WALKIM.Controllers
             }
         }
 
-        public ActionResult MisDatos() 
+        public async Task< IActionResult> MisDatos() 
         {
-            var animales = GetAllTipoAnimal();
+            var animales = await GetAllTipoAnimal();
             ViewBag.Animales = animales;
 
            if(User.Identity!.IsAuthenticated && User.IsInRole("usuario"))
             {
                int idUsuario= IDUSER();
-                var usuario = GetUsuario(idUsuario);
+                var usuario = await GetUsuario(idUsuario);
                 return View(usuario);
             }
             else
@@ -130,6 +130,8 @@ namespace WALKIM.Controllers
                 return View("Error");
             }
         }
+
+
 
         private bool ActualizarUsuario(Usuario usuario)
         {
@@ -199,7 +201,7 @@ namespace WALKIM.Controllers
             return listaUsuarios;
         }
 
-        private Usuario GetUsuario(int id)
+        private async Task<Usuario> GetUsuario(int id)
         {
             Usuario usuario = new Usuario();
             string url = generalUrl + "Usuario/getUsuario?idUsuario=" + id;
@@ -253,7 +255,7 @@ namespace WALKIM.Controllers
 
         }
 
-        private List<TipoAnimal> GetAllTipoAnimal()
+        private async Task< List<TipoAnimal> >GetAllTipoAnimal()
         {
             List<TipoAnimal> animales = new List<TipoAnimal>();
             try

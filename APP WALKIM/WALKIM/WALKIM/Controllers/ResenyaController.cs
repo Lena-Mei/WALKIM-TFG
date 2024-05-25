@@ -17,6 +17,8 @@ namespace WALKIM.Controllers
             return idUsuario;
         }
 
+ 
+
 
         public IActionResult Index()
         {
@@ -40,8 +42,9 @@ namespace WALKIM.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult PublicarResenya(Resenya resenya)
+        public IActionResult PublicarResenya(Resenya resenya, int idServicio)
         {
+            resenya.idServicio = idServicio;
             resenya.idUsuario = IDUSER();
             if (InsertarResenya(resenya))
             {

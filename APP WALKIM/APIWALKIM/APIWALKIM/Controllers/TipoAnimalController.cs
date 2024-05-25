@@ -1,5 +1,7 @@
 ﻿using APIWALKIM.BC;
 using APIWALKIM.Helpers.Interface;
+using APIWALKIM.Models.Request;
+
 using APIWALKIM.Models.Entities;
 using APIWALKIM.Models;
 using Microsoft.AspNetCore.Mvc;
@@ -15,7 +17,7 @@ namespace APIWALKIM.Controllers
 
         [HttpPost]
         [Route("insertarTipoAnimal")]
-        public ActionResult<BaseResponseModel> InsertarTipoAnimal(TipoAnimal animal)
+        public ActionResult<BaseResponseModel> InsertarTipoAnimal(TipoAnimalRequest animal)
         { 
             BaseResponseModel result = tipoAnimalBC.InsertarTipoAnimal(animal);
             return _httpHandleResponse.HandleResponse(result);
@@ -23,7 +25,7 @@ namespace APIWALKIM.Controllers
 
         [HttpPut]
         [Route("actTipoAnimal")]
-        public ActionResult<BaseResponseModel> ActTipoAnimal(TipoAnimal animal)
+        public ActionResult<BaseResponseModel> ActTipoAnimal(TipoAnimalRequest animal)
         {
             BaseResponseModel result = tipoAnimalBC.ActTipoAnimal(animal);
             return _httpHandleResponse.HandleResponse(result);

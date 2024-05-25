@@ -81,7 +81,7 @@ namespace WALKIM.Controllers
             //{
                 if (AnyadirServicio(servicio))
                 {
-                    return RedirectToAction("IniciarSesion");
+                    return RedirectToAction(nameof(Index));
                 }
                 else
                 {
@@ -132,7 +132,7 @@ namespace WALKIM.Controllers
 
             if (ActServicio(servicio))
             {
-                return RedirectToAction("IniciarSesion");
+                return RedirectToAction(nameof(Index));
             }
             else
             {
